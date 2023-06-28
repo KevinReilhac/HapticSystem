@@ -27,9 +27,9 @@ Install HapticSystem with Unity Package Manager
 ## Usage/Examples
 
 ### Create Haptic Clip
-![Create Clip](https://i.ibb.co/sJQQG09/image-2023-06-28-163550391.png)
+![Create Clip](https://i.ibb.co/NpzF4C0/Capture-d-cran-2023-06-28-164824.jpg)
 ### Test it
-![Setup Cip](https://i.ibb.co/3dDm8qm/Haptic-Clip-Setup.gif)
+![Setup Clip](https://i.ibb.co/3dDm8qm/Haptic-Clip-Setup.gif)
 ### Play it
 ```csharp
     HapticManager.PlayClip(hapticClip, targetGamepad);
