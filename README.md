@@ -32,6 +32,9 @@ Install HapticSystem with Unity Package Manager
 ![Setup Clip](https://i.ibb.co/3dDm8qm/Haptic-Clip-Setup.gif)
 ### Play it
 ```csharp
+    [SerializedField] private HapticClip hapticClip;
+    [SerializedField] private int targetGamepad;
+    ...
     HapticManager.PlayClip(hapticClip, targetGamepad);
 ```
 
