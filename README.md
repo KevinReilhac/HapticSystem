@@ -21,7 +21,7 @@ Make your gamepad vibrate.
 Install HapticSystem with Unity Package Manager
 
 ```bash
-  https://github.com/KevinReilhac/HapticSystem.git#upm
+https://github.com/KevinReilhac/HapticSystem.git#upm
 ```
     
 ## Usage/Examples
