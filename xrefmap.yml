@@ -1,0 +1,670 @@
+### YamlMime:XRefMap
+sorted: true
+references:
+- uid: HapticSystem
+  name: HapticSystem
+  href: api/HapticSystem.html
+  commentId: N:HapticSystem
+  fullName: HapticSystem
+  nameWithType: HapticSystem
+- uid: HapticSystem.BoundedCurveAttribute
+  name: BoundedCurveAttribute
+  href: api/HapticSystem.BoundedCurveAttribute.html
+  commentId: T:HapticSystem.BoundedCurveAttribute
+  fullName: HapticSystem.BoundedCurveAttribute
+  nameWithType: BoundedCurveAttribute
+- uid: HapticSystem.BoundedCurveAttribute.#ctor(Rect,System.Int32)
+  name: BoundedCurveAttribute(Rect, Int32)
+  href: api/HapticSystem.BoundedCurveAttribute.html#HapticSystem_BoundedCurveAttribute__ctor_Rect_System_Int32_
+  commentId: M:HapticSystem.BoundedCurveAttribute.#ctor(Rect,System.Int32)
+  fullName: HapticSystem.BoundedCurveAttribute.BoundedCurveAttribute(Rect, System.Int32)
+  nameWithType: BoundedCurveAttribute.BoundedCurveAttribute(Rect, Int32)
+- uid: HapticSystem.BoundedCurveAttribute.#ctor(System.Int32)
+  name: BoundedCurveAttribute(Int32)
+  href: api/HapticSystem.BoundedCurveAttribute.html#HapticSystem_BoundedCurveAttribute__ctor_System_Int32_
+  commentId: M:HapticSystem.BoundedCurveAttribute.#ctor(System.Int32)
+  fullName: HapticSystem.BoundedCurveAttribute.BoundedCurveAttribute(System.Int32)
+  nameWithType: BoundedCurveAttribute.BoundedCurveAttribute(Int32)
+- uid: HapticSystem.BoundedCurveAttribute.#ctor*
+  name: BoundedCurveAttribute
+  href: api/HapticSystem.BoundedCurveAttribute.html#HapticSystem_BoundedCurveAttribute__ctor_
+  commentId: Overload:HapticSystem.BoundedCurveAttribute.#ctor
+  isSpec: "True"
+  fullName: HapticSystem.BoundedCurveAttribute.BoundedCurveAttribute
+  nameWithType: BoundedCurveAttribute.BoundedCurveAttribute
+- uid: HapticSystem.BoundedCurveAttribute.bounds
+  name: bounds
+  href: api/HapticSystem.BoundedCurveAttribute.html#HapticSystem_BoundedCurveAttribute_bounds
+  commentId: F:HapticSystem.BoundedCurveAttribute.bounds
+  fullName: HapticSystem.BoundedCurveAttribute.bounds
+  nameWithType: BoundedCurveAttribute.bounds
+- uid: HapticSystem.BoundedCurveAttribute.height
+  name: height
+  href: api/HapticSystem.BoundedCurveAttribute.html#HapticSystem_BoundedCurveAttribute_height
+  commentId: F:HapticSystem.BoundedCurveAttribute.height
+  fullName: HapticSystem.BoundedCurveAttribute.height
+  nameWithType: BoundedCurveAttribute.height
+- uid: HapticSystem.Editors
+  name: HapticSystem.Editors
+  href: api/HapticSystem.Editors.html
+  commentId: N:HapticSystem.Editors
+  fullName: HapticSystem.Editors
+  nameWithType: HapticSystem.Editors
+- uid: HapticSystem.Editors.BoundedCurveDrawer
+  name: BoundedCurveDrawer
+  href: api/HapticSystem.Editors.BoundedCurveDrawer.html
+  commentId: T:HapticSystem.Editors.BoundedCurveDrawer
+  fullName: HapticSystem.Editors.BoundedCurveDrawer
+  nameWithType: BoundedCurveDrawer
+- uid: HapticSystem.Editors.BoundedCurveDrawer.GetPropertyHeight(SerializedProperty,GUIContent)
+  name: GetPropertyHeight(SerializedProperty, GUIContent)
+  href: api/HapticSystem.Editors.BoundedCurveDrawer.html#HapticSystem_Editors_BoundedCurveDrawer_GetPropertyHeight_SerializedProperty_GUIContent_
+  commentId: M:HapticSystem.Editors.BoundedCurveDrawer.GetPropertyHeight(SerializedProperty,GUIContent)
+  fullName: HapticSystem.Editors.BoundedCurveDrawer.GetPropertyHeight(SerializedProperty, GUIContent)
+  nameWithType: BoundedCurveDrawer.GetPropertyHeight(SerializedProperty, GUIContent)
+- uid: HapticSystem.Editors.BoundedCurveDrawer.GetPropertyHeight*
+  name: GetPropertyHeight
+  href: api/HapticSystem.Editors.BoundedCurveDrawer.html#HapticSystem_Editors_BoundedCurveDrawer_GetPropertyHeight_
+  commentId: Overload:HapticSystem.Editors.BoundedCurveDrawer.GetPropertyHeight
+  isSpec: "True"
+  fullName: HapticSystem.Editors.BoundedCurveDrawer.GetPropertyHeight
+  nameWithType: BoundedCurveDrawer.GetPropertyHeight
+- uid: HapticSystem.Editors.BoundedCurveDrawer.OnGUI(Rect,SerializedProperty,GUIContent)
+  name: OnGUI(Rect, SerializedProperty, GUIContent)
+  href: api/HapticSystem.Editors.BoundedCurveDrawer.html#HapticSystem_Editors_BoundedCurveDrawer_OnGUI_Rect_SerializedProperty_GUIContent_
+  commentId: M:HapticSystem.Editors.BoundedCurveDrawer.OnGUI(Rect,SerializedProperty,GUIContent)
+  fullName: HapticSystem.Editors.BoundedCurveDrawer.OnGUI(Rect, SerializedProperty, GUIContent)
+  nameWithType: BoundedCurveDrawer.OnGUI(Rect, SerializedProperty, GUIContent)
+- uid: HapticSystem.Editors.BoundedCurveDrawer.OnGUI*
+  name: OnGUI
+  href: api/HapticSystem.Editors.BoundedCurveDrawer.html#HapticSystem_Editors_BoundedCurveDrawer_OnGUI_
+  commentId: Overload:HapticSystem.Editors.BoundedCurveDrawer.OnGUI
+  isSpec: "True"
+  fullName: HapticSystem.Editors.BoundedCurveDrawer.OnGUI
+  nameWithType: BoundedCurveDrawer.OnGUI
+- uid: HapticSystem.Editors.HapticClipEditor
+  name: HapticClipEditor
+  href: api/HapticSystem.Editors.HapticClipEditor.html
+  commentId: T:HapticSystem.Editors.HapticClipEditor
+  fullName: HapticSystem.Editors.HapticClipEditor
+  nameWithType: HapticClipEditor
+- uid: HapticSystem.Editors.HapticClipEditor.IsAnyGamepadConnected
+  name: IsAnyGamepadConnected()
+  href: api/HapticSystem.Editors.HapticClipEditor.html#HapticSystem_Editors_HapticClipEditor_IsAnyGamepadConnected
+  commentId: M:HapticSystem.Editors.HapticClipEditor.IsAnyGamepadConnected
+  fullName: HapticSystem.Editors.HapticClipEditor.IsAnyGamepadConnected()
+  nameWithType: HapticClipEditor.IsAnyGamepadConnected()
+- uid: HapticSystem.Editors.HapticClipEditor.IsAnyGamepadConnected*
+  name: IsAnyGamepadConnected
+  href: api/HapticSystem.Editors.HapticClipEditor.html#HapticSystem_Editors_HapticClipEditor_IsAnyGamepadConnected_
+  commentId: Overload:HapticSystem.Editors.HapticClipEditor.IsAnyGamepadConnected
+  isSpec: "True"
+  fullName: HapticSystem.Editors.HapticClipEditor.IsAnyGamepadConnected
+  nameWithType: HapticClipEditor.IsAnyGamepadConnected
+- uid: HapticSystem.Editors.HapticClipEditor.OnEnable
+  name: OnEnable()
+  href: api/HapticSystem.Editors.HapticClipEditor.html#HapticSystem_Editors_HapticClipEditor_OnEnable
+  commentId: M:HapticSystem.Editors.HapticClipEditor.OnEnable
+  fullName: HapticSystem.Editors.HapticClipEditor.OnEnable()
+  nameWithType: HapticClipEditor.OnEnable()
+- uid: HapticSystem.Editors.HapticClipEditor.OnEnable*
+  name: OnEnable
+  href: api/HapticSystem.Editors.HapticClipEditor.html#HapticSystem_Editors_HapticClipEditor_OnEnable_
+  commentId: Overload:HapticSystem.Editors.HapticClipEditor.OnEnable
+  isSpec: "True"
+  fullName: HapticSystem.Editors.HapticClipEditor.OnEnable
+  nameWithType: HapticClipEditor.OnEnable
+- uid: HapticSystem.Editors.HapticClipEditor.OnInspectorGUI
+  name: OnInspectorGUI()
+  href: api/HapticSystem.Editors.HapticClipEditor.html#HapticSystem_Editors_HapticClipEditor_OnInspectorGUI
+  commentId: M:HapticSystem.Editors.HapticClipEditor.OnInspectorGUI
+  fullName: HapticSystem.Editors.HapticClipEditor.OnInspectorGUI()
+  nameWithType: HapticClipEditor.OnInspectorGUI()
+- uid: HapticSystem.Editors.HapticClipEditor.OnInspectorGUI*
+  name: OnInspectorGUI
+  href: api/HapticSystem.Editors.HapticClipEditor.html#HapticSystem_Editors_HapticClipEditor_OnInspectorGUI_
+  commentId: Overload:HapticSystem.Editors.HapticClipEditor.OnInspectorGUI
+  isSpec: "True"
+  fullName: HapticSystem.Editors.HapticClipEditor.OnInspectorGUI
+  nameWithType: HapticClipEditor.OnInspectorGUI
+- uid: HapticSystem.Editors.HapticClipEditor.PlayClip(System.Int32)
+  name: PlayClip(Int32)
+  href: api/HapticSystem.Editors.HapticClipEditor.html#HapticSystem_Editors_HapticClipEditor_PlayClip_System_Int32_
+  commentId: M:HapticSystem.Editors.HapticClipEditor.PlayClip(System.Int32)
+  fullName: HapticSystem.Editors.HapticClipEditor.PlayClip(System.Int32)
+  nameWithType: HapticClipEditor.PlayClip(Int32)
+- uid: HapticSystem.Editors.HapticClipEditor.PlayClip*
+  name: PlayClip
+  href: api/HapticSystem.Editors.HapticClipEditor.html#HapticSystem_Editors_HapticClipEditor_PlayClip_
+  commentId: Overload:HapticSystem.Editors.HapticClipEditor.PlayClip
+  isSpec: "True"
+  fullName: HapticSystem.Editors.HapticClipEditor.PlayClip
+  nameWithType: HapticClipEditor.PlayClip
+- uid: HapticSystem.HapticClip
+  name: HapticClip
+  href: api/HapticSystem.HapticClip.html
+  commentId: T:HapticSystem.HapticClip
+  fullName: HapticSystem.HapticClip
+  nameWithType: HapticClip
+- uid: HapticSystem.HapticClip.Duration
+  name: Duration
+  href: api/HapticSystem.HapticClip.html#HapticSystem_HapticClip_Duration
+  commentId: P:HapticSystem.HapticClip.Duration
+  fullName: HapticSystem.HapticClip.Duration
+  nameWithType: HapticClip.Duration
+- uid: HapticSystem.HapticClip.Duration*
+  name: Duration
+  href: api/HapticSystem.HapticClip.html#HapticSystem_HapticClip_Duration_
+  commentId: Overload:HapticSystem.HapticClip.Duration
+  isSpec: "True"
+  fullName: HapticSystem.HapticClip.Duration
+  nameWithType: HapticClip.Duration
+- uid: HapticSystem.HapticClip.highFrequencyMultiplier
+  name: highFrequencyMultiplier
+  href: api/HapticSystem.HapticClip.html#HapticSystem_HapticClip_highFrequencyMultiplier
+  commentId: F:HapticSystem.HapticClip.highFrequencyMultiplier
+  fullName: HapticSystem.HapticClip.highFrequencyMultiplier
+  nameWithType: HapticClip.highFrequencyMultiplier
+- uid: HapticSystem.HapticClip.Loop
+  name: Loop
+  href: api/HapticSystem.HapticClip.html#HapticSystem_HapticClip_Loop
+  commentId: P:HapticSystem.HapticClip.Loop
+  fullName: HapticSystem.HapticClip.Loop
+  nameWithType: HapticClip.Loop
+- uid: HapticSystem.HapticClip.Loop*
+  name: Loop
+  href: api/HapticSystem.HapticClip.html#HapticSystem_HapticClip_Loop_
+  commentId: Overload:HapticSystem.HapticClip.Loop
+  isSpec: "True"
+  fullName: HapticSystem.HapticClip.Loop
+  nameWithType: HapticClip.Loop
+- uid: HapticSystem.HapticClip.lowFrequencyMultiplier
+  name: lowFrequencyMultiplier
+  href: api/HapticSystem.HapticClip.html#HapticSystem_HapticClip_lowFrequencyMultiplier
+  commentId: F:HapticSystem.HapticClip.lowFrequencyMultiplier
+  fullName: HapticSystem.HapticClip.lowFrequencyMultiplier
+  nameWithType: HapticClip.lowFrequencyMultiplier
+- uid: HapticSystem.HapticClip.UseProgressionCurve
+  name: UseProgressionCurve
+  href: api/HapticSystem.HapticClip.html#HapticSystem_HapticClip_UseProgressionCurve
+  commentId: P:HapticSystem.HapticClip.UseProgressionCurve
+  fullName: HapticSystem.HapticClip.UseProgressionCurve
+  nameWithType: HapticClip.UseProgressionCurve
+- uid: HapticSystem.HapticClip.UseProgressionCurve*
+  name: UseProgressionCurve
+  href: api/HapticSystem.HapticClip.html#HapticSystem_HapticClip_UseProgressionCurve_
+  commentId: Overload:HapticSystem.HapticClip.UseProgressionCurve
+  isSpec: "True"
+  fullName: HapticSystem.HapticClip.UseProgressionCurve
+  nameWithType: HapticClip.UseProgressionCurve
+- uid: HapticSystem.HapticClipInstance
+  name: HapticClipInstance
+  href: api/HapticSystem.HapticClipInstance.html
+  commentId: T:HapticSystem.HapticClipInstance
+  fullName: HapticSystem.HapticClipInstance
+  nameWithType: HapticClipInstance
+- uid: HapticSystem.HapticClipInstance.#ctor(HapticSystem.HapticClip,System.Int32)
+  name: HapticClipInstance(HapticClip, Int32)
+  href: api/HapticSystem.HapticClipInstance.html#HapticSystem_HapticClipInstance__ctor_HapticSystem_HapticClip_System_Int32_
+  commentId: M:HapticSystem.HapticClipInstance.#ctor(HapticSystem.HapticClip,System.Int32)
+  fullName: HapticSystem.HapticClipInstance.HapticClipInstance(HapticSystem.HapticClip, System.Int32)
+  nameWithType: HapticClipInstance.HapticClipInstance(HapticClip, Int32)
+- uid: HapticSystem.HapticClipInstance.#ctor*
+  name: HapticClipInstance
+  href: api/HapticSystem.HapticClipInstance.html#HapticSystem_HapticClipInstance__ctor_
+  commentId: Overload:HapticSystem.HapticClipInstance.#ctor
+  isSpec: "True"
+  fullName: HapticSystem.HapticClipInstance.HapticClipInstance
+  nameWithType: HapticClipInstance.HapticClipInstance
+- uid: HapticSystem.HapticClipInstance.clip
+  name: clip
+  href: api/HapticSystem.HapticClipInstance.html#HapticSystem_HapticClipInstance_clip
+  commentId: P:HapticSystem.HapticClipInstance.clip
+  fullName: HapticSystem.HapticClipInstance.clip
+  nameWithType: HapticClipInstance.clip
+- uid: HapticSystem.HapticClipInstance.clip*
+  name: clip
+  href: api/HapticSystem.HapticClipInstance.html#HapticSystem_HapticClipInstance_clip_
+  commentId: Overload:HapticSystem.HapticClipInstance.clip
+  isSpec: "True"
+  fullName: HapticSystem.HapticClipInstance.clip
+  nameWithType: HapticClipInstance.clip
+- uid: HapticSystem.HapticClipInstance.isPlaying
+  name: isPlaying
+  href: api/HapticSystem.HapticClipInstance.html#HapticSystem_HapticClipInstance_isPlaying
+  commentId: P:HapticSystem.HapticClipInstance.isPlaying
+  fullName: HapticSystem.HapticClipInstance.isPlaying
+  nameWithType: HapticClipInstance.isPlaying
+- uid: HapticSystem.HapticClipInstance.isPlaying*
+  name: isPlaying
+  href: api/HapticSystem.HapticClipInstance.html#HapticSystem_HapticClipInstance_isPlaying_
+  commentId: Overload:HapticSystem.HapticClipInstance.isPlaying
+  isSpec: "True"
+  fullName: HapticSystem.HapticClipInstance.isPlaying
+  nameWithType: HapticClipInstance.isPlaying
+- uid: HapticSystem.HapticClipInstance.progress
+  name: progress
+  href: api/HapticSystem.HapticClipInstance.html#HapticSystem_HapticClipInstance_progress
+  commentId: P:HapticSystem.HapticClipInstance.progress
+  fullName: HapticSystem.HapticClipInstance.progress
+  nameWithType: HapticClipInstance.progress
+- uid: HapticSystem.HapticClipInstance.progress*
+  name: progress
+  href: api/HapticSystem.HapticClipInstance.html#HapticSystem_HapticClipInstance_progress_
+  commentId: Overload:HapticSystem.HapticClipInstance.progress
+  isSpec: "True"
+  fullName: HapticSystem.HapticClipInstance.progress
+  nameWithType: HapticClipInstance.progress
+- uid: HapticSystem.HapticClipInstance.targetGamepadIndex
+  name: targetGamepadIndex
+  href: api/HapticSystem.HapticClipInstance.html#HapticSystem_HapticClipInstance_targetGamepadIndex
+  commentId: P:HapticSystem.HapticClipInstance.targetGamepadIndex
+  fullName: HapticSystem.HapticClipInstance.targetGamepadIndex
+  nameWithType: HapticClipInstance.targetGamepadIndex
+- uid: HapticSystem.HapticClipInstance.targetGamepadIndex*
+  name: targetGamepadIndex
+  href: api/HapticSystem.HapticClipInstance.html#HapticSystem_HapticClipInstance_targetGamepadIndex_
+  commentId: Overload:HapticSystem.HapticClipInstance.targetGamepadIndex
+  isSpec: "True"
+  fullName: HapticSystem.HapticClipInstance.targetGamepadIndex
+  nameWithType: HapticClipInstance.targetGamepadIndex
+- uid: HapticSystem.HapticManager
+  name: HapticManager
+  href: api/HapticSystem.HapticManager.html
+  commentId: T:HapticSystem.HapticManager
+  fullName: HapticSystem.HapticManager
+  nameWithType: HapticManager
+- uid: HapticSystem.HapticManager.PlayClip(HapticSystem.HapticClip,System.Int32)
+  name: PlayClip(HapticClip, Int32)
+  href: api/HapticSystem.HapticManager.html#HapticSystem_HapticManager_PlayClip_HapticSystem_HapticClip_System_Int32_
+  commentId: M:HapticSystem.HapticManager.PlayClip(HapticSystem.HapticClip,System.Int32)
+  fullName: HapticSystem.HapticManager.PlayClip(HapticSystem.HapticClip, System.Int32)
+  nameWithType: HapticManager.PlayClip(HapticClip, Int32)
+- uid: HapticSystem.HapticManager.PlayClip(HapticSystem.TwoConstantRandomFloat01,System.Single,System.Single,System.Boolean,AnimationCurve,System.Boolean,System.Single,System.Int32)
+  name: PlayClip(TwoConstantRandomFloat01, Single, Single, Boolean, AnimationCurve, Boolean, Single, Int32)
+  href: api/HapticSystem.HapticManager.html#HapticSystem_HapticManager_PlayClip_HapticSystem_TwoConstantRandomFloat01_System_Single_System_Single_System_Boolean_AnimationCurve_System_Boolean_System_Single_System_Int32_
+  commentId: M:HapticSystem.HapticManager.PlayClip(HapticSystem.TwoConstantRandomFloat01,System.Single,System.Single,System.Boolean,AnimationCurve,System.Boolean,System.Single,System.Int32)
+  fullName: HapticSystem.HapticManager.PlayClip(HapticSystem.TwoConstantRandomFloat01, System.Single, System.Single, System.Boolean, AnimationCurve, System.Boolean, System.Single, System.Int32)
+  nameWithType: HapticManager.PlayClip(TwoConstantRandomFloat01, Single, Single, Boolean, AnimationCurve, Boolean, Single, Int32)
+- uid: HapticSystem.HapticManager.PlayClip*
+  name: PlayClip
+  href: api/HapticSystem.HapticManager.html#HapticSystem_HapticManager_PlayClip_
+  commentId: Overload:HapticSystem.HapticManager.PlayClip
+  isSpec: "True"
+  fullName: HapticSystem.HapticManager.PlayClip
+  nameWithType: HapticManager.PlayClip
+- uid: HapticSystem.HapticManager.StopAllClipInstances
+  name: StopAllClipInstances()
+  href: api/HapticSystem.HapticManager.html#HapticSystem_HapticManager_StopAllClipInstances
+  commentId: M:HapticSystem.HapticManager.StopAllClipInstances
+  fullName: HapticSystem.HapticManager.StopAllClipInstances()
+  nameWithType: HapticManager.StopAllClipInstances()
+- uid: HapticSystem.HapticManager.StopAllClipInstances*
+  name: StopAllClipInstances
+  href: api/HapticSystem.HapticManager.html#HapticSystem_HapticManager_StopAllClipInstances_
+  commentId: Overload:HapticSystem.HapticManager.StopAllClipInstances
+  isSpec: "True"
+  fullName: HapticSystem.HapticManager.StopAllClipInstances
+  nameWithType: HapticManager.StopAllClipInstances
+- uid: HapticSystem.HapticManager.StopClipInstance(HapticSystem.HapticClipInstance)
+  name: StopClipInstance(HapticClipInstance)
+  href: api/HapticSystem.HapticManager.html#HapticSystem_HapticManager_StopClipInstance_HapticSystem_HapticClipInstance_
+  commentId: M:HapticSystem.HapticManager.StopClipInstance(HapticSystem.HapticClipInstance)
+  fullName: HapticSystem.HapticManager.StopClipInstance(HapticSystem.HapticClipInstance)
+  nameWithType: HapticManager.StopClipInstance(HapticClipInstance)
+- uid: HapticSystem.HapticManager.StopClipInstance*
+  name: StopClipInstance
+  href: api/HapticSystem.HapticManager.html#HapticSystem_HapticManager_StopClipInstance_
+  commentId: Overload:HapticSystem.HapticManager.StopClipInstance
+  isSpec: "True"
+  fullName: HapticSystem.HapticManager.StopClipInstance
+  nameWithType: HapticManager.StopClipInstance
+- uid: HapticSystem.HapticManager.StrenghtMultiplier
+  name: StrenghtMultiplier
+  href: api/HapticSystem.HapticManager.html#HapticSystem_HapticManager_StrenghtMultiplier
+  commentId: P:HapticSystem.HapticManager.StrenghtMultiplier
+  fullName: HapticSystem.HapticManager.StrenghtMultiplier
+  nameWithType: HapticManager.StrenghtMultiplier
+- uid: HapticSystem.HapticManager.StrenghtMultiplier*
+  name: StrenghtMultiplier
+  href: api/HapticSystem.HapticManager.html#HapticSystem_HapticManager_StrenghtMultiplier_
+  commentId: Overload:HapticSystem.HapticManager.StrenghtMultiplier
+  isSpec: "True"
+  fullName: HapticSystem.HapticManager.StrenghtMultiplier
+  nameWithType: HapticManager.StrenghtMultiplier
+- uid: HapticSystem.HapticManagerCoroutinePlayer
+  name: HapticManagerCoroutinePlayer
+  href: api/HapticSystem.HapticManagerCoroutinePlayer.html
+  commentId: T:HapticSystem.HapticManagerCoroutinePlayer
+  fullName: HapticSystem.HapticManagerCoroutinePlayer
+  nameWithType: HapticManagerCoroutinePlayer
+- uid: HapticSystem.TwoConstantRandomFloat
+  name: TwoConstantRandomFloat
+  href: api/HapticSystem.TwoConstantRandomFloat.html
+  commentId: T:HapticSystem.TwoConstantRandomFloat
+  fullName: HapticSystem.TwoConstantRandomFloat
+  nameWithType: TwoConstantRandomFloat
+- uid: HapticSystem.TwoConstantRandomFloat.#ctor(System.Single)
+  name: TwoConstantRandomFloat(Single)
+  href: api/HapticSystem.TwoConstantRandomFloat.html#HapticSystem_TwoConstantRandomFloat__ctor_System_Single_
+  commentId: M:HapticSystem.TwoConstantRandomFloat.#ctor(System.Single)
+  fullName: HapticSystem.TwoConstantRandomFloat.TwoConstantRandomFloat(System.Single)
+  nameWithType: TwoConstantRandomFloat.TwoConstantRandomFloat(Single)
+- uid: HapticSystem.TwoConstantRandomFloat.#ctor(System.Single,System.Single)
+  name: TwoConstantRandomFloat(Single, Single)
+  href: api/HapticSystem.TwoConstantRandomFloat.html#HapticSystem_TwoConstantRandomFloat__ctor_System_Single_System_Single_
+  commentId: M:HapticSystem.TwoConstantRandomFloat.#ctor(System.Single,System.Single)
+  fullName: HapticSystem.TwoConstantRandomFloat.TwoConstantRandomFloat(System.Single, System.Single)
+  nameWithType: TwoConstantRandomFloat.TwoConstantRandomFloat(Single, Single)
+- uid: HapticSystem.TwoConstantRandomFloat.#ctor*
+  name: TwoConstantRandomFloat
+  href: api/HapticSystem.TwoConstantRandomFloat.html#HapticSystem_TwoConstantRandomFloat__ctor_
+  commentId: Overload:HapticSystem.TwoConstantRandomFloat.#ctor
+  isSpec: "True"
+  fullName: HapticSystem.TwoConstantRandomFloat.TwoConstantRandomFloat
+  nameWithType: TwoConstantRandomFloat.TwoConstantRandomFloat
+- uid: HapticSystem.TwoConstantRandomFloat.GetRandomValue
+  name: GetRandomValue()
+  href: api/HapticSystem.TwoConstantRandomFloat.html#HapticSystem_TwoConstantRandomFloat_GetRandomValue
+  commentId: M:HapticSystem.TwoConstantRandomFloat.GetRandomValue
+  fullName: HapticSystem.TwoConstantRandomFloat.GetRandomValue()
+  nameWithType: TwoConstantRandomFloat.GetRandomValue()
+- uid: HapticSystem.TwoConstantRandomFloat.GetRandomValue*
+  name: GetRandomValue
+  href: api/HapticSystem.TwoConstantRandomFloat.html#HapticSystem_TwoConstantRandomFloat_GetRandomValue_
+  commentId: Overload:HapticSystem.TwoConstantRandomFloat.GetRandomValue
+  isSpec: "True"
+  fullName: HapticSystem.TwoConstantRandomFloat.GetRandomValue
+  nameWithType: TwoConstantRandomFloat.GetRandomValue
+- uid: HapticSystem.TwoConstantRandomFloat.op_Implicit(System.Single)~HapticSystem.TwoConstantRandomFloat
+  name: Implicit(Single to TwoConstantRandomFloat)
+  href: api/HapticSystem.TwoConstantRandomFloat.html#HapticSystem_TwoConstantRandomFloat_op_Implicit_System_Single__HapticSystem_TwoConstantRandomFloat
+  commentId: M:HapticSystem.TwoConstantRandomFloat.op_Implicit(System.Single)~HapticSystem.TwoConstantRandomFloat
+  name.vb: Widening(Single to TwoConstantRandomFloat)
+  fullName: HapticSystem.TwoConstantRandomFloat.Implicit(System.Single to HapticSystem.TwoConstantRandomFloat)
+  fullName.vb: HapticSystem.TwoConstantRandomFloat.Widening(System.Single to HapticSystem.TwoConstantRandomFloat)
+  nameWithType: TwoConstantRandomFloat.Implicit(Single to TwoConstantRandomFloat)
+  nameWithType.vb: TwoConstantRandomFloat.Widening(Single to TwoConstantRandomFloat)
+- uid: HapticSystem.TwoConstantRandomFloat.op_Implicit*
+  name: Implicit
+  href: api/HapticSystem.TwoConstantRandomFloat.html#HapticSystem_TwoConstantRandomFloat_op_Implicit_
+  commentId: Overload:HapticSystem.TwoConstantRandomFloat.op_Implicit
+  isSpec: "True"
+  name.vb: Widening
+  fullName: HapticSystem.TwoConstantRandomFloat.Implicit
+  fullName.vb: HapticSystem.TwoConstantRandomFloat.Widening
+  nameWithType: TwoConstantRandomFloat.Implicit
+  nameWithType.vb: TwoConstantRandomFloat.Widening
+- uid: HapticSystem.TwoConstantRandomFloat01
+  name: TwoConstantRandomFloat01
+  href: api/HapticSystem.TwoConstantRandomFloat01.html
+  commentId: T:HapticSystem.TwoConstantRandomFloat01
+  fullName: HapticSystem.TwoConstantRandomFloat01
+  nameWithType: TwoConstantRandomFloat01
+- uid: HapticSystem.TwoConstantRandomFloat01.#ctor(System.Single)
+  name: TwoConstantRandomFloat01(Single)
+  href: api/HapticSystem.TwoConstantRandomFloat01.html#HapticSystem_TwoConstantRandomFloat01__ctor_System_Single_
+  commentId: M:HapticSystem.TwoConstantRandomFloat01.#ctor(System.Single)
+  fullName: HapticSystem.TwoConstantRandomFloat01.TwoConstantRandomFloat01(System.Single)
+  nameWithType: TwoConstantRandomFloat01.TwoConstantRandomFloat01(Single)
+- uid: HapticSystem.TwoConstantRandomFloat01.#ctor(System.Single,System.Single)
+  name: TwoConstantRandomFloat01(Single, Single)
+  href: api/HapticSystem.TwoConstantRandomFloat01.html#HapticSystem_TwoConstantRandomFloat01__ctor_System_Single_System_Single_
+  commentId: M:HapticSystem.TwoConstantRandomFloat01.#ctor(System.Single,System.Single)
+  fullName: HapticSystem.TwoConstantRandomFloat01.TwoConstantRandomFloat01(System.Single, System.Single)
+  nameWithType: TwoConstantRandomFloat01.TwoConstantRandomFloat01(Single, Single)
+- uid: HapticSystem.TwoConstantRandomFloat01.#ctor*
+  name: TwoConstantRandomFloat01
+  href: api/HapticSystem.TwoConstantRandomFloat01.html#HapticSystem_TwoConstantRandomFloat01__ctor_
+  commentId: Overload:HapticSystem.TwoConstantRandomFloat01.#ctor
+  isSpec: "True"
+  fullName: HapticSystem.TwoConstantRandomFloat01.TwoConstantRandomFloat01
+  nameWithType: TwoConstantRandomFloat01.TwoConstantRandomFloat01
+- uid: HapticSystem.TwoConstantRandomFloat01.GetRandomValue
+  name: GetRandomValue()
+  href: api/HapticSystem.TwoConstantRandomFloat01.html#HapticSystem_TwoConstantRandomFloat01_GetRandomValue
+  commentId: M:HapticSystem.TwoConstantRandomFloat01.GetRandomValue
+  fullName: HapticSystem.TwoConstantRandomFloat01.GetRandomValue()
+  nameWithType: TwoConstantRandomFloat01.GetRandomValue()
+- uid: HapticSystem.TwoConstantRandomFloat01.GetRandomValue*
+  name: GetRandomValue
+  href: api/HapticSystem.TwoConstantRandomFloat01.html#HapticSystem_TwoConstantRandomFloat01_GetRandomValue_
+  commentId: Overload:HapticSystem.TwoConstantRandomFloat01.GetRandomValue
+  isSpec: "True"
+  fullName: HapticSystem.TwoConstantRandomFloat01.GetRandomValue
+  nameWithType: TwoConstantRandomFloat01.GetRandomValue
+- uid: HapticSystem.TwoConstantRandomFloat01.op_Implicit(System.Single)~HapticSystem.TwoConstantRandomFloat01
+  name: Implicit(Single to TwoConstantRandomFloat01)
+  href: api/HapticSystem.TwoConstantRandomFloat01.html#HapticSystem_TwoConstantRandomFloat01_op_Implicit_System_Single__HapticSystem_TwoConstantRandomFloat01
+  commentId: M:HapticSystem.TwoConstantRandomFloat01.op_Implicit(System.Single)~HapticSystem.TwoConstantRandomFloat01
+  name.vb: Widening(Single to TwoConstantRandomFloat01)
+  fullName: HapticSystem.TwoConstantRandomFloat01.Implicit(System.Single to HapticSystem.TwoConstantRandomFloat01)
+  fullName.vb: HapticSystem.TwoConstantRandomFloat01.Widening(System.Single to HapticSystem.TwoConstantRandomFloat01)
+  nameWithType: TwoConstantRandomFloat01.Implicit(Single to TwoConstantRandomFloat01)
+  nameWithType.vb: TwoConstantRandomFloat01.Widening(Single to TwoConstantRandomFloat01)
+- uid: HapticSystem.TwoConstantRandomFloat01.op_Implicit*
+  name: Implicit
+  href: api/HapticSystem.TwoConstantRandomFloat01.html#HapticSystem_TwoConstantRandomFloat01_op_Implicit_
+  commentId: Overload:HapticSystem.TwoConstantRandomFloat01.op_Implicit
+  isSpec: "True"
+  name.vb: Widening
+  fullName: HapticSystem.TwoConstantRandomFloat01.Implicit
+  fullName.vb: HapticSystem.TwoConstantRandomFloat01.Widening
+  nameWithType: TwoConstantRandomFloat01.Implicit
+  nameWithType.vb: TwoConstantRandomFloat01.Widening
+- uid: HapticSystem.TwoConstantRandomInt
+  name: TwoConstantRandomInt
+  href: api/HapticSystem.TwoConstantRandomInt.html
+  commentId: T:HapticSystem.TwoConstantRandomInt
+  fullName: HapticSystem.TwoConstantRandomInt
+  nameWithType: TwoConstantRandomInt
+- uid: HapticSystem.TwoConstantRandomInt.#ctor(System.Int32)
+  name: TwoConstantRandomInt(Int32)
+  href: api/HapticSystem.TwoConstantRandomInt.html#HapticSystem_TwoConstantRandomInt__ctor_System_Int32_
+  commentId: M:HapticSystem.TwoConstantRandomInt.#ctor(System.Int32)
+  fullName: HapticSystem.TwoConstantRandomInt.TwoConstantRandomInt(System.Int32)
+  nameWithType: TwoConstantRandomInt.TwoConstantRandomInt(Int32)
+- uid: HapticSystem.TwoConstantRandomInt.#ctor(System.Int32,System.Int32)
+  name: TwoConstantRandomInt(Int32, Int32)
+  href: api/HapticSystem.TwoConstantRandomInt.html#HapticSystem_TwoConstantRandomInt__ctor_System_Int32_System_Int32_
+  commentId: M:HapticSystem.TwoConstantRandomInt.#ctor(System.Int32,System.Int32)
+  fullName: HapticSystem.TwoConstantRandomInt.TwoConstantRandomInt(System.Int32, System.Int32)
+  nameWithType: TwoConstantRandomInt.TwoConstantRandomInt(Int32, Int32)
+- uid: HapticSystem.TwoConstantRandomInt.#ctor*
+  name: TwoConstantRandomInt
+  href: api/HapticSystem.TwoConstantRandomInt.html#HapticSystem_TwoConstantRandomInt__ctor_
+  commentId: Overload:HapticSystem.TwoConstantRandomInt.#ctor
+  isSpec: "True"
+  fullName: HapticSystem.TwoConstantRandomInt.TwoConstantRandomInt
+  nameWithType: TwoConstantRandomInt.TwoConstantRandomInt
+- uid: HapticSystem.TwoConstantRandomInt.GetRandomValue
+  name: GetRandomValue()
+  href: api/HapticSystem.TwoConstantRandomInt.html#HapticSystem_TwoConstantRandomInt_GetRandomValue
+  commentId: M:HapticSystem.TwoConstantRandomInt.GetRandomValue
+  fullName: HapticSystem.TwoConstantRandomInt.GetRandomValue()
+  nameWithType: TwoConstantRandomInt.GetRandomValue()
+- uid: HapticSystem.TwoConstantRandomInt.GetRandomValue*
+  name: GetRandomValue
+  href: api/HapticSystem.TwoConstantRandomInt.html#HapticSystem_TwoConstantRandomInt_GetRandomValue_
+  commentId: Overload:HapticSystem.TwoConstantRandomInt.GetRandomValue
+  isSpec: "True"
+  fullName: HapticSystem.TwoConstantRandomInt.GetRandomValue
+  nameWithType: TwoConstantRandomInt.GetRandomValue
+- uid: HapticSystem.TwoConstantRandomInt.op_Implicit(System.Int32)~HapticSystem.TwoConstantRandomInt
+  name: Implicit(Int32 to TwoConstantRandomInt)
+  href: api/HapticSystem.TwoConstantRandomInt.html#HapticSystem_TwoConstantRandomInt_op_Implicit_System_Int32__HapticSystem_TwoConstantRandomInt
+  commentId: M:HapticSystem.TwoConstantRandomInt.op_Implicit(System.Int32)~HapticSystem.TwoConstantRandomInt
+  name.vb: Widening(Int32 to TwoConstantRandomInt)
+  fullName: HapticSystem.TwoConstantRandomInt.Implicit(System.Int32 to HapticSystem.TwoConstantRandomInt)
+  fullName.vb: HapticSystem.TwoConstantRandomInt.Widening(System.Int32 to HapticSystem.TwoConstantRandomInt)
+  nameWithType: TwoConstantRandomInt.Implicit(Int32 to TwoConstantRandomInt)
+  nameWithType.vb: TwoConstantRandomInt.Widening(Int32 to TwoConstantRandomInt)
+- uid: HapticSystem.TwoConstantRandomInt.op_Implicit*
+  name: Implicit
+  href: api/HapticSystem.TwoConstantRandomInt.html#HapticSystem_TwoConstantRandomInt_op_Implicit_
+  commentId: Overload:HapticSystem.TwoConstantRandomInt.op_Implicit
+  isSpec: "True"
+  name.vb: Widening
+  fullName: HapticSystem.TwoConstantRandomInt.Implicit
+  fullName.vb: HapticSystem.TwoConstantRandomInt.Widening
+  nameWithType: TwoConstantRandomInt.Implicit
+  nameWithType.vb: TwoConstantRandomInt.Widening
+- uid: HapticSystem.TwoConstantRandomValue`1
+  name: TwoConstantRandomValue<T>
+  href: api/HapticSystem.TwoConstantRandomValue-1.html
+  commentId: T:HapticSystem.TwoConstantRandomValue`1
+  name.vb: TwoConstantRandomValue(Of T)
+  fullName: HapticSystem.TwoConstantRandomValue<T>
+  fullName.vb: HapticSystem.TwoConstantRandomValue(Of T)
+  nameWithType: TwoConstantRandomValue<T>
+  nameWithType.vb: TwoConstantRandomValue(Of T)
+- uid: HapticSystem.TwoConstantRandomValue`1.#ctor(`0)
+  name: TwoConstantRandomValue(T)
+  href: api/HapticSystem.TwoConstantRandomValue-1.html#HapticSystem_TwoConstantRandomValue_1__ctor__0_
+  commentId: M:HapticSystem.TwoConstantRandomValue`1.#ctor(`0)
+  fullName: HapticSystem.TwoConstantRandomValue<T>.TwoConstantRandomValue(T)
+  fullName.vb: HapticSystem.TwoConstantRandomValue(Of T).TwoConstantRandomValue(T)
+  nameWithType: TwoConstantRandomValue<T>.TwoConstantRandomValue(T)
+  nameWithType.vb: TwoConstantRandomValue(Of T).TwoConstantRandomValue(T)
+- uid: HapticSystem.TwoConstantRandomValue`1.#ctor(`0,`0)
+  name: TwoConstantRandomValue(T, T)
+  href: api/HapticSystem.TwoConstantRandomValue-1.html#HapticSystem_TwoConstantRandomValue_1__ctor__0__0_
+  commentId: M:HapticSystem.TwoConstantRandomValue`1.#ctor(`0,`0)
+  fullName: HapticSystem.TwoConstantRandomValue<T>.TwoConstantRandomValue(T, T)
+  fullName.vb: HapticSystem.TwoConstantRandomValue(Of T).TwoConstantRandomValue(T, T)
+  nameWithType: TwoConstantRandomValue<T>.TwoConstantRandomValue(T, T)
+  nameWithType.vb: TwoConstantRandomValue(Of T).TwoConstantRandomValue(T, T)
+- uid: HapticSystem.TwoConstantRandomValue`1.#ctor*
+  name: TwoConstantRandomValue
+  href: api/HapticSystem.TwoConstantRandomValue-1.html#HapticSystem_TwoConstantRandomValue_1__ctor_
+  commentId: Overload:HapticSystem.TwoConstantRandomValue`1.#ctor
+  isSpec: "True"
+  fullName: HapticSystem.TwoConstantRandomValue<T>.TwoConstantRandomValue
+  fullName.vb: HapticSystem.TwoConstantRandomValue(Of T).TwoConstantRandomValue
+  nameWithType: TwoConstantRandomValue<T>.TwoConstantRandomValue
+  nameWithType.vb: TwoConstantRandomValue(Of T).TwoConstantRandomValue
+- uid: HapticSystem.TwoConstantRandomValue`1.GetRandomValue
+  name: GetRandomValue()
+  href: api/HapticSystem.TwoConstantRandomValue-1.html#HapticSystem_TwoConstantRandomValue_1_GetRandomValue
+  commentId: M:HapticSystem.TwoConstantRandomValue`1.GetRandomValue
+  fullName: HapticSystem.TwoConstantRandomValue<T>.GetRandomValue()
+  fullName.vb: HapticSystem.TwoConstantRandomValue(Of T).GetRandomValue()
+  nameWithType: TwoConstantRandomValue<T>.GetRandomValue()
+  nameWithType.vb: TwoConstantRandomValue(Of T).GetRandomValue()
+- uid: HapticSystem.TwoConstantRandomValue`1.GetRandomValue*
+  name: GetRandomValue
+  href: api/HapticSystem.TwoConstantRandomValue-1.html#HapticSystem_TwoConstantRandomValue_1_GetRandomValue_
+  commentId: Overload:HapticSystem.TwoConstantRandomValue`1.GetRandomValue
+  isSpec: "True"
+  fullName: HapticSystem.TwoConstantRandomValue<T>.GetRandomValue
+  fullName.vb: HapticSystem.TwoConstantRandomValue(Of T).GetRandomValue
+  nameWithType: TwoConstantRandomValue<T>.GetRandomValue
+  nameWithType.vb: TwoConstantRandomValue(Of T).GetRandomValue
+- uid: HapticSystem.TwoConstantRandomValue`1.GetValue
+  name: GetValue()
+  href: api/HapticSystem.TwoConstantRandomValue-1.html#HapticSystem_TwoConstantRandomValue_1_GetValue
+  commentId: M:HapticSystem.TwoConstantRandomValue`1.GetValue
+  fullName: HapticSystem.TwoConstantRandomValue<T>.GetValue()
+  fullName.vb: HapticSystem.TwoConstantRandomValue(Of T).GetValue()
+  nameWithType: TwoConstantRandomValue<T>.GetValue()
+  nameWithType.vb: TwoConstantRandomValue(Of T).GetValue()
+- uid: HapticSystem.TwoConstantRandomValue`1.GetValue*
+  name: GetValue
+  href: api/HapticSystem.TwoConstantRandomValue-1.html#HapticSystem_TwoConstantRandomValue_1_GetValue_
+  commentId: Overload:HapticSystem.TwoConstantRandomValue`1.GetValue
+  isSpec: "True"
+  fullName: HapticSystem.TwoConstantRandomValue<T>.GetValue
+  fullName.vb: HapticSystem.TwoConstantRandomValue(Of T).GetValue
+  nameWithType: TwoConstantRandomValue<T>.GetValue
+  nameWithType.vb: TwoConstantRandomValue(Of T).GetValue
+- uid: HapticSystem.TwoConstantRandomValue`1.IsRandom
+  name: IsRandom
+  href: api/HapticSystem.TwoConstantRandomValue-1.html#HapticSystem_TwoConstantRandomValue_1_IsRandom
+  commentId: P:HapticSystem.TwoConstantRandomValue`1.IsRandom
+  fullName: HapticSystem.TwoConstantRandomValue<T>.IsRandom
+  fullName.vb: HapticSystem.TwoConstantRandomValue(Of T).IsRandom
+  nameWithType: TwoConstantRandomValue<T>.IsRandom
+  nameWithType.vb: TwoConstantRandomValue(Of T).IsRandom
+- uid: HapticSystem.TwoConstantRandomValue`1.IsRandom*
+  name: IsRandom
+  href: api/HapticSystem.TwoConstantRandomValue-1.html#HapticSystem_TwoConstantRandomValue_1_IsRandom_
+  commentId: Overload:HapticSystem.TwoConstantRandomValue`1.IsRandom
+  isSpec: "True"
+  fullName: HapticSystem.TwoConstantRandomValue<T>.IsRandom
+  fullName.vb: HapticSystem.TwoConstantRandomValue(Of T).IsRandom
+  nameWithType: TwoConstantRandomValue<T>.IsRandom
+  nameWithType.vb: TwoConstantRandomValue(Of T).IsRandom
+- uid: HapticSystem.TwoConstantRandomValue`1.maxValue
+  name: maxValue
+  href: api/HapticSystem.TwoConstantRandomValue-1.html#HapticSystem_TwoConstantRandomValue_1_maxValue
+  commentId: F:HapticSystem.TwoConstantRandomValue`1.maxValue
+  fullName: HapticSystem.TwoConstantRandomValue<T>.maxValue
+  fullName.vb: HapticSystem.TwoConstantRandomValue(Of T).maxValue
+  nameWithType: TwoConstantRandomValue<T>.maxValue
+  nameWithType.vb: TwoConstantRandomValue(Of T).maxValue
+- uid: HapticSystem.TwoConstantRandomValue`1.minValue
+  name: minValue
+  href: api/HapticSystem.TwoConstantRandomValue-1.html#HapticSystem_TwoConstantRandomValue_1_minValue
+  commentId: F:HapticSystem.TwoConstantRandomValue`1.minValue
+  fullName: HapticSystem.TwoConstantRandomValue<T>.minValue
+  fullName.vb: HapticSystem.TwoConstantRandomValue(Of T).minValue
+  nameWithType: TwoConstantRandomValue<T>.minValue
+  nameWithType.vb: TwoConstantRandomValue(Of T).minValue
+- uid: HapticSystem.TwoConstantRandomValue`1.random
+  name: random
+  href: api/HapticSystem.TwoConstantRandomValue-1.html#HapticSystem_TwoConstantRandomValue_1_random
+  commentId: F:HapticSystem.TwoConstantRandomValue`1.random
+  fullName: HapticSystem.TwoConstantRandomValue<T>.random
+  fullName.vb: HapticSystem.TwoConstantRandomValue(Of T).random
+  nameWithType: TwoConstantRandomValue<T>.random
+  nameWithType.vb: TwoConstantRandomValue(Of T).random
+- uid: HapticSystem.TwoConstantRandomValue`1.RecomputeValue
+  name: RecomputeValue()
+  href: api/HapticSystem.TwoConstantRandomValue-1.html#HapticSystem_TwoConstantRandomValue_1_RecomputeValue
+  commentId: M:HapticSystem.TwoConstantRandomValue`1.RecomputeValue
+  fullName: HapticSystem.TwoConstantRandomValue<T>.RecomputeValue()
+  fullName.vb: HapticSystem.TwoConstantRandomValue(Of T).RecomputeValue()
+  nameWithType: TwoConstantRandomValue<T>.RecomputeValue()
+  nameWithType.vb: TwoConstantRandomValue(Of T).RecomputeValue()
+- uid: HapticSystem.TwoConstantRandomValue`1.RecomputeValue*
+  name: RecomputeValue
+  href: api/HapticSystem.TwoConstantRandomValue-1.html#HapticSystem_TwoConstantRandomValue_1_RecomputeValue_
+  commentId: Overload:HapticSystem.TwoConstantRandomValue`1.RecomputeValue
+  isSpec: "True"
+  fullName: HapticSystem.TwoConstantRandomValue<T>.RecomputeValue
+  fullName.vb: HapticSystem.TwoConstantRandomValue(Of T).RecomputeValue
+  nameWithType: TwoConstantRandomValue<T>.RecomputeValue
+  nameWithType.vb: TwoConstantRandomValue(Of T).RecomputeValue
+- uid: HapticSystem.TwoConstantRandomValue`1.value
+  name: value
+  href: api/HapticSystem.TwoConstantRandomValue-1.html#HapticSystem_TwoConstantRandomValue_1_value
+  commentId: F:HapticSystem.TwoConstantRandomValue`1.value
+  fullName: HapticSystem.TwoConstantRandomValue<T>.value
+  fullName.vb: HapticSystem.TwoConstantRandomValue(Of T).value
+  nameWithType: TwoConstantRandomValue<T>.value
+  nameWithType.vb: TwoConstantRandomValue(Of T).value
+- uid: HapticSystem.TwoConstantRandomValue`1.ValueType
+  name: TwoConstantRandomValue<T>.ValueType
+  href: api/HapticSystem.TwoConstantRandomValue-1.ValueType.html
+  commentId: T:HapticSystem.TwoConstantRandomValue`1.ValueType
+  name.vb: TwoConstantRandomValue(Of T).ValueType
+  fullName: HapticSystem.TwoConstantRandomValue<T>.ValueType
+  fullName.vb: HapticSystem.TwoConstantRandomValue(Of T).ValueType
+  nameWithType: TwoConstantRandomValue<T>.ValueType
+  nameWithType.vb: TwoConstantRandomValue(Of T).ValueType
+- uid: HapticSystem.TwoConstantRandomValue`1.ValueType.Constant
+  name: Constant
+  href: api/HapticSystem.TwoConstantRandomValue-1.ValueType.html#HapticSystem_TwoConstantRandomValue_1_ValueType_Constant
+  commentId: F:HapticSystem.TwoConstantRandomValue`1.ValueType.Constant
+  fullName: HapticSystem.TwoConstantRandomValue<T>.ValueType.Constant
+  fullName.vb: HapticSystem.TwoConstantRandomValue(Of T).ValueType.Constant
+  nameWithType: TwoConstantRandomValue<T>.ValueType.Constant
+  nameWithType.vb: TwoConstantRandomValue(Of T).ValueType.Constant
+- uid: HapticSystem.TwoConstantRandomValue`1.ValueType.Random
+  name: Random
+  href: api/HapticSystem.TwoConstantRandomValue-1.ValueType.html#HapticSystem_TwoConstantRandomValue_1_ValueType_Random
+  commentId: F:HapticSystem.TwoConstantRandomValue`1.ValueType.Random
+  fullName: HapticSystem.TwoConstantRandomValue<T>.ValueType.Random
+  fullName.vb: HapticSystem.TwoConstantRandomValue(Of T).ValueType.Random
+  nameWithType: TwoConstantRandomValue<T>.ValueType.Random
+  nameWithType.vb: TwoConstantRandomValue(Of T).ValueType.Random

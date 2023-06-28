@@ -1,0 +1,344 @@
+{
+  "sitemap": {
+    "fileOptions": {
+      "api/*": {
+        "baseUrl": "https://kevinreilhac.github.io/HapticSystem/",
+        "changefreq": "daily"
+      }
+    },
+    "baseUrl": "https://kevinreilhac.github.io/HapticSystem/",
+    "changefreq": "weekly"
+  },
+  "homepages": [],
+  "source_base_path": "D:/a/HapticSystem/HapticSystem/Documentation",
+  "xrefmap": "xrefmap.yml",
+  "files": [
+    {
+      "type": "Resource",
+      "output": {
+        "resource": {
+          "relative_path": "index.json"
+        }
+      },
+      "is_incremental": false
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/HapticSystem.BoundedCurveAttribute.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/HapticSystem.BoundedCurveAttribute.html",
+          "hash": "n/bJAsRUcuYrHXg+sCbYmQz39cKp+IxJimbUsoxdxNY="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/HapticSystem.Editors.BoundedCurveDrawer.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/HapticSystem.Editors.BoundedCurveDrawer.html",
+          "hash": "8aNbeq/4wpovMGMxF7AokurE36jG5eTFiubPZyDbFz8="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/HapticSystem.Editors.HapticClipEditor.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/HapticSystem.Editors.HapticClipEditor.html",
+          "hash": "ScnonYWfb9KM5exuuopb1Qu4tJIOIGR0M5/KU9E47K8="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/HapticSystem.Editors.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/HapticSystem.Editors.html",
+          "hash": "NsF1kUsvCMZ2QDylhqjikMebZcUuSFZBuc1wonY7p+o="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/HapticSystem.HapticClip.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/HapticSystem.HapticClip.html",
+          "hash": "3nU8ts/7A6qBxYvsRTObL4DRjng8tQuLibWcptm02BM="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/HapticSystem.HapticClipInstance.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/HapticSystem.HapticClipInstance.html",
+          "hash": "qEeePD1iLzAnG0iXeU4JepGohd0Z+/UdbXgOxTHYUwE="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/HapticSystem.HapticManager.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/HapticSystem.HapticManager.html",
+          "hash": "X2G1Bajs1Pjpg5qnia4lilKypRiKUlSiMUgrzbxBQCc="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/HapticSystem.HapticManagerCoroutinePlayer.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/HapticSystem.HapticManagerCoroutinePlayer.html",
+          "hash": "svDswo3AyFAGfI/cC7ZowGY1Jr4T9kLX4RZirEFJspQ="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/HapticSystem.TwoConstantRandomFloat.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/HapticSystem.TwoConstantRandomFloat.html",
+          "hash": "99d7Ni9eDoK3lG9p8V/g1f2gAbaHHZkA13NdSA44lqg="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/HapticSystem.TwoConstantRandomFloat01.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/HapticSystem.TwoConstantRandomFloat01.html",
+          "hash": "x1IyK3NNvvJHjW0fJFuW0fjGFrp7TtG8Lr7dM2JEDv4="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/HapticSystem.TwoConstantRandomInt.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/HapticSystem.TwoConstantRandomInt.html",
+          "hash": "8CmWY0Ouqy6wC43q9eTI6tCKAP+i42fkTqN+qfNKdvo="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/HapticSystem.TwoConstantRandomValue-1.ValueType.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/HapticSystem.TwoConstantRandomValue-1.ValueType.html",
+          "hash": "peR81ZI3l0+6eSMRc93BRL7JBqWidU1qZOb8XKhV22s="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/HapticSystem.TwoConstantRandomValue-1.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/HapticSystem.TwoConstantRandomValue-1.html",
+          "hash": "IgBl7ZTfUlPLoQeq2eknR0X3D4mJVCjVpUXu1vxphok="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/HapticSystem.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/HapticSystem.html",
+          "hash": "tRDwuV+k22gj1qOz87jTabGwxpzBlZnQ3zADH849rMc="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Toc",
+      "source_relative_path": "api/toc.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/toc.html",
+          "hash": "iVOd6tWcEvAUk+arj4yH8kRDRuahrc7+4XldStll3v8="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "index.md",
+      "output": {
+        ".html": {
+          "relative_path": "index.html",
+          "hash": "++rqafgdEh828c3MmNHqdhhx7/BYZakv2oBnkFOlRxA="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "manual/coniunctis.md",
+      "output": {
+        ".html": {
+          "relative_path": "manual/coniunctis.html",
+          "hash": "qwNR3casUJkEUV5U5EzqOzlQiVAiw+S/18a2mGl7tyk="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "manual/etiam.md",
+      "output": {
+        ".html": {
+          "relative_path": "manual/etiam.html",
+          "hash": "8dickUSb4GPFZiFRtn8Hd4oWP2DGz9OZdm1lnFZkMng="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Toc",
+      "source_relative_path": "manual/toc.yml",
+      "output": {
+        ".html": {
+          "relative_path": "manual/toc.html",
+          "hash": "rP+c9KPLMLO+q5u7rC7ci/iMYXqbmZC8g5PeGCEXGU4="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "resources/ExampleManual.png",
+      "output": {
+        "resource": {
+          "relative_path": "resources/ExampleManual.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "resources/ExampleScriptingApi.png",
+      "output": {
+        "resource": {
+          "relative_path": "resources/ExampleScriptingApi.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Toc",
+      "source_relative_path": "toc.yml",
+      "output": {
+        ".html": {
+          "relative_path": "toc.html",
+          "hash": "ivLtL8KJZxFVMtAvevEbJBFCwBZxZnPhiOQFCI8mHFo="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    }
+  ],
+  "incremental_info": [
+    {
+      "status": {
+        "can_incremental": false,
+        "details": "Cannot build incrementally because last build info is missing.",
+        "incrementalPhase": "build",
+        "total_file_count": 0,
+        "skipped_file_count": 0,
+        "full_build_reason_code": "NoAvailableBuildCache"
+      },
+      "processors": {
+        "ConceptualDocumentProcessor": {
+          "can_incremental": false,
+          "incrementalPhase": "build",
+          "total_file_count": 3,
+          "skipped_file_count": 0
+        },
+        "ManagedReferenceDocumentProcessor": {
+          "can_incremental": false,
+          "incrementalPhase": "build",
+          "total_file_count": 14,
+          "skipped_file_count": 0
+        },
+        "ResourceDocumentProcessor": {
+          "can_incremental": false,
+          "details": "Processor ResourceDocumentProcessor cannot support incremental build because the processor doesn't implement ISupportIncrementalDocumentProcessor interface.",
+          "incrementalPhase": "build",
+          "total_file_count": 0,
+          "skipped_file_count": 0
+        },
+        "TocDocumentProcessor": {
+          "can_incremental": false,
+          "details": "Processor TocDocumentProcessor cannot support incremental build because the processor doesn't implement ISupportIncrementalDocumentProcessor interface.",
+          "incrementalPhase": "build",
+          "total_file_count": 0,
+          "skipped_file_count": 0
+        }
+      }
+    },
+    {
+      "status": {
+        "can_incremental": false,
+        "details": "Cannot support incremental post processing, the reason is: should not trace intermediate info.",
+        "incrementalPhase": "postProcessing",
+        "total_file_count": 0,
+        "skipped_file_count": 0
+      },
+      "processors": {}
+    }
+  ],
+  "version_info": {},
+  "groups": [
+    {
+      "xrefmap": "xrefmap.yml"
+    }
+  ]
+}
