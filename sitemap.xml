@@ -2,103 +2,103 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
     <loc>https://kevinreilhac.github.io/HapticSystem/api/HapticSystem.BoundedCurveAttribute.html</loc>
-    <lastmod>2023-06-28T02:57:02+00:00</lastmod>
+    <lastmod>2023-06-28T03:05:47+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://kevinreilhac.github.io/HapticSystem/api/HapticSystem.Editors.BoundedCurveDrawer.html</loc>
-    <lastmod>2023-06-28T02:57:02+00:00</lastmod>
+    <lastmod>2023-06-28T03:05:47+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://kevinreilhac.github.io/HapticSystem/api/HapticSystem.Editors.HapticClipEditor.html</loc>
-    <lastmod>2023-06-28T02:57:02+00:00</lastmod>
+    <lastmod>2023-06-28T03:05:47+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://kevinreilhac.github.io/HapticSystem/api/HapticSystem.Editors.html</loc>
-    <lastmod>2023-06-28T02:57:02+00:00</lastmod>
+    <lastmod>2023-06-28T03:05:47+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://kevinreilhac.github.io/HapticSystem/api/HapticSystem.HapticClip.html</loc>
-    <lastmod>2023-06-28T02:57:02+00:00</lastmod>
+    <lastmod>2023-06-28T03:05:47+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://kevinreilhac.github.io/HapticSystem/api/HapticSystem.HapticClipInstance.html</loc>
-    <lastmod>2023-06-28T02:57:02+00:00</lastmod>
+    <lastmod>2023-06-28T03:05:47+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://kevinreilhac.github.io/HapticSystem/api/HapticSystem.HapticManager.html</loc>
-    <lastmod>2023-06-28T02:57:02+00:00</lastmod>
+    <lastmod>2023-06-28T03:05:47+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://kevinreilhac.github.io/HapticSystem/api/HapticSystem.HapticManagerCoroutinePlayer.html</loc>
-    <lastmod>2023-06-28T02:57:02+00:00</lastmod>
+    <lastmod>2023-06-28T03:05:47+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://kevinreilhac.github.io/HapticSystem/api/HapticSystem.TwoConstantRandomFloat.html</loc>
-    <lastmod>2023-06-28T02:57:02+00:00</lastmod>
+    <lastmod>2023-06-28T03:05:47+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://kevinreilhac.github.io/HapticSystem/api/HapticSystem.TwoConstantRandomFloat01.html</loc>
-    <lastmod>2023-06-28T02:57:02+00:00</lastmod>
+    <lastmod>2023-06-28T03:05:47+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://kevinreilhac.github.io/HapticSystem/api/HapticSystem.TwoConstantRandomInt.html</loc>
-    <lastmod>2023-06-28T02:57:02+00:00</lastmod>
+    <lastmod>2023-06-28T03:05:47+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://kevinreilhac.github.io/HapticSystem/api/HapticSystem.TwoConstantRandomValue-1.ValueType.html</loc>
-    <lastmod>2023-06-28T02:57:02+00:00</lastmod>
+    <lastmod>2023-06-28T03:05:47+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://kevinreilhac.github.io/HapticSystem/api/HapticSystem.TwoConstantRandomValue-1.html</loc>
-    <lastmod>2023-06-28T02:57:02+00:00</lastmod>
+    <lastmod>2023-06-28T03:05:47+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://kevinreilhac.github.io/HapticSystem/api/HapticSystem.html</loc>
-    <lastmod>2023-06-28T02:57:02+00:00</lastmod>
+    <lastmod>2023-06-28T03:05:47+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://kevinreilhac.github.io/HapticSystem/index.html</loc>
-    <lastmod>2023-06-28T02:57:02+00:00</lastmod>
+    <lastmod>2023-06-28T03:05:47+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://kevinreilhac.github.io/HapticSystem/manual/coniunctis.html</loc>
-    <lastmod>2023-06-28T02:57:02+00:00</lastmod>
+    <lastmod>2023-06-28T03:05:47+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://kevinreilhac.github.io/HapticSystem/manual/etiam.html</loc>
-    <lastmod>2023-06-28T02:57:02+00:00</lastmod>
+    <lastmod>2023-06-28T03:05:47+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
