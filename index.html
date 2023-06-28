@@ -5,9 +5,9 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <title> | Haptic System </title>
+    <title>Haptic System | Haptic System </title>
     <meta name="viewport" content="width=device-width">
-    <meta name="title" content=" | Haptic System ">
+    <meta name="title" content="Haptic System | Haptic System ">
     <meta name="generator" content="docfx 2.59.4.0">
     
     <link rel="shortcut icon" href="favicon.ico">
@@ -70,7 +70,39 @@
         <div class="article row grid">
           <div class="col-md-10">
             <article class="content wrap" id="_content" data-uid="">
+<h1 id="haptic-system">Haptic System</h1>
 
+<p>Make your gamepad vibrate.</p>
+<h2 id="features">Features</h2>
+<ul>
+<li>Create HapticClips</li>
+<li>Test it in inspector</li>
+<li>Play it in game</li>
+</ul>
+<h2 id="authors">Authors</h2>
+<ul>
+<li><a href="https://www.github.com/KevinReilhac">@Kévin &quot;Kebab&quot; Reilhac</a></li>
+</ul>
+<h2 id="installation">Installation</h2>
+<p>Install HapticSystem with Unity Package Manager</p>
+<pre><code class="lang-bash">  https://github.com/KevinReilhac/HapticSystem.git#upm
+</code></pre><h2 id="usageexamples">Usage/Examples</h2>
+<h3 id="create-haptic-clip">Create Haptic Clip</h3>
+<p><img src="https://i.ibb.co/sJQQG09/image-2023-06-28-163550391.png" alt="Create Clip"></p>
+<h3 id="test-it">Test it</h3>
+<p><img src="https://i.ibb.co/3dDm8qm/Haptic-Clip-Setup.gif" alt="Setup Cip"></p>
+<h3 id="play-it">Play it</h3>
+<pre><code class="lang-csharp">    HapticManager.PlayClip(hapticClip, targetGamepad);
+</code></pre><h3 id="stop-it">Stop it</h3>
+<pre><code class="lang-csharp">    HapticClipInstance instance = HapticManager.PlayClip(hapticClip, targetGamepad);
+    HapticManager.StopClipInstance(instance);
+
+    //OR
+    HapticManager.StopAllClipInstances()
+</code></pre><h2 id="documentation">Documentation</h2>
+<p><a href="https://kevinreilhac.github.io/HapticSystem/">Read Documentation</a></p>
+<hr>
+<p>I am not responsible for any use of this module, find a better one.</p>
 </article>
           </div>
           
