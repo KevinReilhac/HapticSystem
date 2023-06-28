@@ -72,7 +72,7 @@
   "index.html": {
     "href": "index.html",
     "title": "Haptic System | Haptic System",
-    "keywords": "Haptic System Make your gamepad vibrate. Features Create HapticClips Test it in inspector Play it in game Authors @Kévin \"Kebab\" Reilhac Installation Install HapticSystem with Unity Package Manager https://github.com/KevinReilhac/HapticSystem.git#upm Usage/Examples Create Haptic Clip Test it Play it HapticManager.PlayClip(hapticClip, targetGamepad); Stop it HapticClipInstance instance = HapticManager.PlayClip(hapticClip, targetGamepad); HapticManager.StopClipInstance(instance); //OR HapticManager.StopAllClipInstances() Documentation Read Documentation I am not responsible for any use of this module, find a better one."
+    "keywords": "Haptic System Make your gamepad vibrate. Features Create HapticClips Test it in inspector Play it in game Authors @Kévin \"Kebab\" Reilhac Installation Install HapticSystem with Unity Package Manager https://github.com/KevinReilhac/HapticSystem.git#upm Usage/Examples Create Haptic Clip Test it Play it [SerializedField] private HapticClip hapticClip; [SerializedField] private int targetGamepad; ... HapticManager.PlayClip(hapticClip, targetGamepad); Stop it HapticClipInstance instance = HapticManager.PlayClip(hapticClip, targetGamepad); HapticManager.StopClipInstance(instance); //OR HapticManager.StopAllClipInstances() Documentation Read Documentation I am not responsible for any use of this module, find a better one."
   },
   "manual/coniunctis.html": {
     "href": "manual/coniunctis.html",

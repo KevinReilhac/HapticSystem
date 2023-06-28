@@ -92,7 +92,10 @@
 <h3 id="test-it">Test it</h3>
 <p><img src="https://i.ibb.co/3dDm8qm/Haptic-Clip-Setup.gif" alt="Setup Clip"></p>
 <h3 id="play-it">Play it</h3>
-<pre><code class="lang-csharp">    HapticManager.PlayClip(hapticClip, targetGamepad);
+<pre><code class="lang-csharp">    [SerializedField] private HapticClip hapticClip;
+    [SerializedField] private int targetGamepad;
+    ...
+    HapticManager.PlayClip(hapticClip, targetGamepad);
 </code></pre><h3 id="stop-it">Stop it</h3>
 <pre><code class="lang-csharp">    HapticClipInstance instance = HapticManager.PlayClip(hapticClip, targetGamepad);
     HapticManager.StopClipInstance(instance);
