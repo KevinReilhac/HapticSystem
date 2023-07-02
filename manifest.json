@@ -60,11 +60,23 @@
     },
     {
       "type": "ManagedReference",
+      "source_relative_path": "api/HapticSystem.Editors.HapticClipPropertyDrawer.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/HapticSystem.Editors.HapticClipPropertyDrawer.html",
+          "hash": "f1rTjXMJIWwKc9KmWb1Zu6bRB+l9Lsrq9yBJQ5bXntY="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
       "source_relative_path": "api/HapticSystem.Editors.yml",
       "output": {
         ".html": {
           "relative_path": "api/HapticSystem.Editors.html",
-          "hash": "NsF1kUsvCMZ2QDylhqjikMebZcUuSFZBuc1wonY7p+o="
+          "hash": "FBdN99eTuEVNF97FNsAD08W8JXlDAgofwKi284i1eb0="
         }
       },
       "is_incremental": false,
@@ -100,19 +112,7 @@
       "output": {
         ".html": {
           "relative_path": "api/HapticSystem.HapticManager.html",
-          "hash": "X2G1Bajs1Pjpg5qnia4lilKypRiKUlSiMUgrzbxBQCc="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/HapticSystem.HapticManagerCoroutinePlayer.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/HapticSystem.HapticManagerCoroutinePlayer.html",
-          "hash": "svDswo3AyFAGfI/cC7ZowGY1Jr4T9kLX4RZirEFJspQ="
+          "hash": "LUjlyTLltP6gWl2N/dlw9ekZevvg3pDxym18QADfjds="
         }
       },
       "is_incremental": false,
@@ -184,7 +184,7 @@
       "output": {
         ".html": {
           "relative_path": "api/HapticSystem.html",
-          "hash": "tRDwuV+k22gj1qOz87jTabGwxpzBlZnQ3zADH849rMc="
+          "hash": "spMkAlSgsceCspq5F1H9WkpS/j73Zm7WHhtDjxjDJkM="
         }
       },
       "is_incremental": false,
@@ -196,7 +196,7 @@
       "output": {
         ".html": {
           "relative_path": "api/toc.html",
-          "hash": "iVOd6tWcEvAUk+arj4yH8kRDRuahrc7+4XldStll3v8="
+          "hash": "snFbc6iTzL0PIvTdhCsXmuMdvAcjBaRFfSN/OHHH0W0="
         }
       },
       "is_incremental": false,

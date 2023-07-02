@@ -140,6 +140,25 @@ references:
   isSpec: "True"
   fullName: HapticSystem.Editors.HapticClipEditor.PlayClip
   nameWithType: HapticClipEditor.PlayClip
+- uid: HapticSystem.Editors.HapticClipPropertyDrawer
+  name: HapticClipPropertyDrawer
+  href: api/HapticSystem.Editors.HapticClipPropertyDrawer.html
+  commentId: T:HapticSystem.Editors.HapticClipPropertyDrawer
+  fullName: HapticSystem.Editors.HapticClipPropertyDrawer
+  nameWithType: HapticClipPropertyDrawer
+- uid: HapticSystem.Editors.HapticClipPropertyDrawer.OnGUI(Rect,SerializedProperty,GUIContent)
+  name: OnGUI(Rect, SerializedProperty, GUIContent)
+  href: api/HapticSystem.Editors.HapticClipPropertyDrawer.html#HapticSystem_Editors_HapticClipPropertyDrawer_OnGUI_Rect_SerializedProperty_GUIContent_
+  commentId: M:HapticSystem.Editors.HapticClipPropertyDrawer.OnGUI(Rect,SerializedProperty,GUIContent)
+  fullName: HapticSystem.Editors.HapticClipPropertyDrawer.OnGUI(Rect, SerializedProperty, GUIContent)
+  nameWithType: HapticClipPropertyDrawer.OnGUI(Rect, SerializedProperty, GUIContent)
+- uid: HapticSystem.Editors.HapticClipPropertyDrawer.OnGUI*
+  name: OnGUI
+  href: api/HapticSystem.Editors.HapticClipPropertyDrawer.html#HapticSystem_Editors_HapticClipPropertyDrawer_OnGUI_
+  commentId: Overload:HapticSystem.Editors.HapticClipPropertyDrawer.OnGUI
+  isSpec: "True"
+  fullName: HapticSystem.Editors.HapticClipPropertyDrawer.OnGUI
+  nameWithType: HapticClipPropertyDrawer.OnGUI
 - uid: HapticSystem.HapticClip
   name: HapticClip
   href: api/HapticSystem.HapticClip.html
@@ -274,18 +293,49 @@ references:
   commentId: T:HapticSystem.HapticManager
   fullName: HapticSystem.HapticManager
   nameWithType: HapticManager
+- uid: HapticSystem.HapticManager.CreateCustomClip(HapticSystem.TwoConstantRandomFloat01,System.Single,System.Single,System.Boolean,AnimationCurve,System.Boolean,System.Single)
+  name: CreateCustomClip(TwoConstantRandomFloat01, Single, Single, Boolean, AnimationCurve, Boolean, Single)
+  href: api/HapticSystem.HapticManager.html#HapticSystem_HapticManager_CreateCustomClip_HapticSystem_TwoConstantRandomFloat01_System_Single_System_Single_System_Boolean_AnimationCurve_System_Boolean_System_Single_
+  commentId: M:HapticSystem.HapticManager.CreateCustomClip(HapticSystem.TwoConstantRandomFloat01,System.Single,System.Single,System.Boolean,AnimationCurve,System.Boolean,System.Single)
+  fullName: HapticSystem.HapticManager.CreateCustomClip(HapticSystem.TwoConstantRandomFloat01, System.Single, System.Single, System.Boolean, AnimationCurve, System.Boolean, System.Single)
+  nameWithType: HapticManager.CreateCustomClip(TwoConstantRandomFloat01, Single, Single, Boolean, AnimationCurve, Boolean, Single)
+- uid: HapticSystem.HapticManager.CreateCustomClip*
+  name: CreateCustomClip
+  href: api/HapticSystem.HapticManager.html#HapticSystem_HapticManager_CreateCustomClip_
+  commentId: Overload:HapticSystem.HapticManager.CreateCustomClip
+  isSpec: "True"
+  fullName: HapticSystem.HapticManager.CreateCustomClip
+  nameWithType: HapticManager.CreateCustomClip
+- uid: HapticSystem.HapticManager.PlayClip(HapticSystem.HapticClip)
+  name: PlayClip(HapticClip)
+  href: api/HapticSystem.HapticManager.html#HapticSystem_HapticManager_PlayClip_HapticSystem_HapticClip_
+  commentId: M:HapticSystem.HapticManager.PlayClip(HapticSystem.HapticClip)
+  fullName: HapticSystem.HapticManager.PlayClip(HapticSystem.HapticClip)
+  nameWithType: HapticManager.PlayClip(HapticClip)
+- uid: HapticSystem.HapticManager.PlayClip(HapticSystem.HapticClip,Gamepad)
+  name: PlayClip(HapticClip, Gamepad)
+  href: api/HapticSystem.HapticManager.html#HapticSystem_HapticManager_PlayClip_HapticSystem_HapticClip_Gamepad_
+  commentId: M:HapticSystem.HapticManager.PlayClip(HapticSystem.HapticClip,Gamepad)
+  fullName: HapticSystem.HapticManager.PlayClip(HapticSystem.HapticClip, Gamepad)
+  nameWithType: HapticManager.PlayClip(HapticClip, Gamepad)
+- uid: HapticSystem.HapticManager.PlayClip(HapticSystem.HapticClip,InputDevice)
+  name: PlayClip(HapticClip, InputDevice)
+  href: api/HapticSystem.HapticManager.html#HapticSystem_HapticManager_PlayClip_HapticSystem_HapticClip_InputDevice_
+  commentId: M:HapticSystem.HapticManager.PlayClip(HapticSystem.HapticClip,InputDevice)
+  fullName: HapticSystem.HapticManager.PlayClip(HapticSystem.HapticClip, InputDevice)
+  nameWithType: HapticManager.PlayClip(HapticClip, InputDevice)
+- uid: HapticSystem.HapticManager.PlayClip(HapticSystem.HapticClip,PlayerInput)
+  name: PlayClip(HapticClip, PlayerInput)
+  href: api/HapticSystem.HapticManager.html#HapticSystem_HapticManager_PlayClip_HapticSystem_HapticClip_PlayerInput_
+  commentId: M:HapticSystem.HapticManager.PlayClip(HapticSystem.HapticClip,PlayerInput)
+  fullName: HapticSystem.HapticManager.PlayClip(HapticSystem.HapticClip, PlayerInput)
+  nameWithType: HapticManager.PlayClip(HapticClip, PlayerInput)
 - uid: HapticSystem.HapticManager.PlayClip(HapticSystem.HapticClip,System.Int32)
   name: PlayClip(HapticClip, Int32)
   href: api/HapticSystem.HapticManager.html#HapticSystem_HapticManager_PlayClip_HapticSystem_HapticClip_System_Int32_
   commentId: M:HapticSystem.HapticManager.PlayClip(HapticSystem.HapticClip,System.Int32)
   fullName: HapticSystem.HapticManager.PlayClip(HapticSystem.HapticClip, System.Int32)
   nameWithType: HapticManager.PlayClip(HapticClip, Int32)
-- uid: HapticSystem.HapticManager.PlayClip(HapticSystem.TwoConstantRandomFloat01,System.Single,System.Single,System.Boolean,AnimationCurve,System.Boolean,System.Single,System.Int32)
-  name: PlayClip(TwoConstantRandomFloat01, Single, Single, Boolean, AnimationCurve, Boolean, Single, Int32)
-  href: api/HapticSystem.HapticManager.html#HapticSystem_HapticManager_PlayClip_HapticSystem_TwoConstantRandomFloat01_System_Single_System_Single_System_Boolean_AnimationCurve_System_Boolean_System_Single_System_Int32_
-  commentId: M:HapticSystem.HapticManager.PlayClip(HapticSystem.TwoConstantRandomFloat01,System.Single,System.Single,System.Boolean,AnimationCurve,System.Boolean,System.Single,System.Int32)
-  fullName: HapticSystem.HapticManager.PlayClip(HapticSystem.TwoConstantRandomFloat01, System.Single, System.Single, System.Boolean, AnimationCurve, System.Boolean, System.Single, System.Int32)
-  nameWithType: HapticManager.PlayClip(TwoConstantRandomFloat01, Single, Single, Boolean, AnimationCurve, Boolean, Single, Int32)
 - uid: HapticSystem.HapticManager.PlayClip*
   name: PlayClip
   href: api/HapticSystem.HapticManager.html#HapticSystem_HapticManager_PlayClip_
@@ -293,6 +343,32 @@ references:
   isSpec: "True"
   fullName: HapticSystem.HapticManager.PlayClip
   nameWithType: HapticManager.PlayClip
+- uid: HapticSystem.HapticManager.PlayClipOnAllGamepads(HapticSystem.HapticClip)
+  name: PlayClipOnAllGamepads(HapticClip)
+  href: api/HapticSystem.HapticManager.html#HapticSystem_HapticManager_PlayClipOnAllGamepads_HapticSystem_HapticClip_
+  commentId: M:HapticSystem.HapticManager.PlayClipOnAllGamepads(HapticSystem.HapticClip)
+  fullName: HapticSystem.HapticManager.PlayClipOnAllGamepads(HapticSystem.HapticClip)
+  nameWithType: HapticManager.PlayClipOnAllGamepads(HapticClip)
+- uid: HapticSystem.HapticManager.PlayClipOnAllGamepads*
+  name: PlayClipOnAllGamepads
+  href: api/HapticSystem.HapticManager.html#HapticSystem_HapticManager_PlayClipOnAllGamepads_
+  commentId: Overload:HapticSystem.HapticManager.PlayClipOnAllGamepads
+  isSpec: "True"
+  fullName: HapticSystem.HapticManager.PlayClipOnAllGamepads
+  nameWithType: HapticManager.PlayClipOnAllGamepads
+- uid: HapticSystem.HapticManager.PlayClipOnGamepadIndex(HapticSystem.HapticClip,System.Int32)
+  name: PlayClipOnGamepadIndex(HapticClip, Int32)
+  href: api/HapticSystem.HapticManager.html#HapticSystem_HapticManager_PlayClipOnGamepadIndex_HapticSystem_HapticClip_System_Int32_
+  commentId: M:HapticSystem.HapticManager.PlayClipOnGamepadIndex(HapticSystem.HapticClip,System.Int32)
+  fullName: HapticSystem.HapticManager.PlayClipOnGamepadIndex(HapticSystem.HapticClip, System.Int32)
+  nameWithType: HapticManager.PlayClipOnGamepadIndex(HapticClip, Int32)
+- uid: HapticSystem.HapticManager.PlayClipOnGamepadIndex*
+  name: PlayClipOnGamepadIndex
+  href: api/HapticSystem.HapticManager.html#HapticSystem_HapticManager_PlayClipOnGamepadIndex_
+  commentId: Overload:HapticSystem.HapticManager.PlayClipOnGamepadIndex
+  isSpec: "True"
+  fullName: HapticSystem.HapticManager.PlayClipOnGamepadIndex
+  nameWithType: HapticManager.PlayClipOnGamepadIndex
 - uid: HapticSystem.HapticManager.StopAllClipInstances
   name: StopAllClipInstances()
   href: api/HapticSystem.HapticManager.html#HapticSystem_HapticManager_StopAllClipInstances
@@ -332,12 +408,6 @@ references:
   isSpec: "True"
   fullName: HapticSystem.HapticManager.StrenghtMultiplier
   nameWithType: HapticManager.StrenghtMultiplier
-- uid: HapticSystem.HapticManagerCoroutinePlayer
-  name: HapticManagerCoroutinePlayer
-  href: api/HapticSystem.HapticManagerCoroutinePlayer.html
-  commentId: T:HapticSystem.HapticManagerCoroutinePlayer
-  fullName: HapticSystem.HapticManagerCoroutinePlayer
-  nameWithType: HapticManagerCoroutinePlayer
 - uid: HapticSystem.TwoConstantRandomFloat
   name: TwoConstantRandomFloat
   href: api/HapticSystem.TwoConstantRandomFloat.html

@@ -131,65 +131,14 @@ Use it for a vibration settings slider for exemple
   </h3>
   
   
-  <a id="HapticSystem_HapticManager_PlayClip_" data-uid="HapticSystem.HapticManager.PlayClip*"></a>
-  <h4 id="HapticSystem_HapticManager_PlayClip_HapticSystem_HapticClip_System_Int32_" data-uid="HapticSystem.HapticManager.PlayClip(HapticSystem.HapticClip,System.Int32)">PlayClip(HapticClip, Int32)</h4>
-  <div class="markdown level1 summary"><p>Play a clip and return an Haptic Clip instance</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static HapticClipInstance PlayClip(HapticClip clip, int targetGamepadIndex = -1)</code></pre>
-  </div>
-  <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="HapticSystem.HapticClip.html">HapticClip</a></td>
-        <td><span class="parametername">clip</span></td>
-        <td><p>Clip to play</p>
-</td>
-      </tr>
-      <tr>
-        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">Int32</a></td>
-        <td><span class="parametername">targetGamepadIndex</span></td>
-        <td><p>Target gamepad (-1 for all gamepads) </p>
-</td>
-      </tr>
-    </tbody>
-  </table>
-  <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="HapticSystem.HapticClipInstance.html">HapticClipInstance</a></td>
-        <td><p>Use HapticClipInstance to stop clip by using HapticManager.Stop method </p>
-</td>
-      </tr>
-    </tbody>
-  </table>
-  
-  
-  <a id="HapticSystem_HapticManager_PlayClip_" data-uid="HapticSystem.HapticManager.PlayClip*"></a>
-  <h4 id="HapticSystem_HapticManager_PlayClip_HapticSystem_TwoConstantRandomFloat01_System_Single_System_Single_System_Boolean_AnimationCurve_System_Boolean_System_Single_System_Int32_" data-uid="HapticSystem.HapticManager.PlayClip(HapticSystem.TwoConstantRandomFloat01,System.Single,System.Single,System.Boolean,AnimationCurve,System.Boolean,System.Single,System.Int32)">PlayClip(TwoConstantRandomFloat01, Single, Single, Boolean, AnimationCurve, Boolean, Single, Int32)</h4>
+  <a id="HapticSystem_HapticManager_CreateCustomClip_" data-uid="HapticSystem.HapticManager.CreateCustomClip*"></a>
+  <h4 id="HapticSystem_HapticManager_CreateCustomClip_HapticSystem_TwoConstantRandomFloat01_System_Single_System_Single_System_Boolean_AnimationCurve_System_Boolean_System_Single_" data-uid="HapticSystem.HapticManager.CreateCustomClip(HapticSystem.TwoConstantRandomFloat01,System.Single,System.Single,System.Boolean,AnimationCurve,System.Boolean,System.Single)">CreateCustomClip(TwoConstantRandomFloat01, Single, Single, Boolean, AnimationCurve, Boolean, Single)</h4>
   <div class="markdown level1 summary"><p>Create and play haptic clip</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static HapticClipInstance PlayClip(TwoConstantRandomFloat01 strenght, float lowFrequencyMultiplier = 1F, float highFrequencyMultiplier = 1F, bool useProgressionCurve = false, AnimationCurve progressionCurve = null, bool loop = false, float duration = 0.3F, int targetGamepadIndex = -1)</code></pre>
+    <pre><code class="lang-csharp hljs">public static HapticClip CreateCustomClip(TwoConstantRandomFloat01 strenght, float lowFrequencyMultiplier = 1F, float highFrequencyMultiplier = 1F, bool useProgressionCurve = false, AnimationCurve progressionCurve = null, bool loop = false, float duration = 0.3F)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -236,10 +185,346 @@ Use it for a vibration settings slider for exemple
         <td><span class="parametername">duration</span></td>
         <td></td>
       </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="HapticSystem.HapticClip.html">HapticClip</a></td>
+        <td><p>Use HapticClipInstance to stop clip by using HapticManager.Stop method </p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="HapticSystem_HapticManager_PlayClip_" data-uid="HapticSystem.HapticManager.PlayClip*"></a>
+  <h4 id="HapticSystem_HapticManager_PlayClip_HapticSystem_HapticClip_" data-uid="HapticSystem.HapticManager.PlayClip(HapticSystem.HapticClip)">PlayClip(HapticClip)</h4>
+  <div class="markdown level1 summary"><p>Play a clip and return an Haptic Clip instance</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static HapticClipInstance PlayClip(HapticClip clip)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="HapticSystem.HapticClip.html">HapticClip</a></td>
+        <td><span class="parametername">clip</span></td>
+        <td><p>Clip to play</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="HapticSystem.HapticClipInstance.html">HapticClipInstance</a></td>
+        <td><p>Use HapticClipInstance to stop clip by using HapticManager.Stop method </p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="HapticSystem_HapticManager_PlayClip_" data-uid="HapticSystem.HapticManager.PlayClip*"></a>
+  <h4 id="HapticSystem_HapticManager_PlayClip_HapticSystem_HapticClip_Gamepad_" data-uid="HapticSystem.HapticManager.PlayClip(HapticSystem.HapticClip,Gamepad)">PlayClip(HapticClip, Gamepad)</h4>
+  <div class="markdown level1 summary"><p>Play a clip and return an Haptic Clip instance</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static HapticClipInstance PlayClip(HapticClip clip, Gamepad gamepad)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="HapticSystem.HapticClip.html">HapticClip</a></td>
+        <td><span class="parametername">clip</span></td>
+        <td><p>Clip to play</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">Gamepad</span></td>
+        <td><span class="parametername">gamepad</span></td>
+        <td><p>Target gamepad</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="HapticSystem.HapticClipInstance.html">HapticClipInstance</a></td>
+        <td><p>Use HapticClipInstance to stop clip by using HapticManager.Stop method </p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="HapticSystem_HapticManager_PlayClip_" data-uid="HapticSystem.HapticManager.PlayClip*"></a>
+  <h4 id="HapticSystem_HapticManager_PlayClip_HapticSystem_HapticClip_InputDevice_" data-uid="HapticSystem.HapticManager.PlayClip(HapticSystem.HapticClip,InputDevice)">PlayClip(HapticClip, InputDevice)</h4>
+  <div class="markdown level1 summary"><p>Play a clip and return an Haptic Clip instance</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static HapticClipInstance PlayClip(HapticClip clip, InputDevice device)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="HapticSystem.HapticClip.html">HapticClip</a></td>
+        <td><span class="parametername">clip</span></td>
+        <td><p>Clip to play</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">InputDevice</span></td>
+        <td><span class="parametername">device</span></td>
+        <td><p>Target device </p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="HapticSystem.HapticClipInstance.html">HapticClipInstance</a></td>
+        <td><p>Use HapticClipInstance to stop clip by using HapticManager.Stop method </p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="HapticSystem_HapticManager_PlayClip_" data-uid="HapticSystem.HapticManager.PlayClip*"></a>
+  <h4 id="HapticSystem_HapticManager_PlayClip_HapticSystem_HapticClip_PlayerInput_" data-uid="HapticSystem.HapticManager.PlayClip(HapticSystem.HapticClip,PlayerInput)">PlayClip(HapticClip, PlayerInput)</h4>
+  <div class="markdown level1 summary"><p>Play a clip and return an Haptic Clip instance</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static HapticClipInstance PlayClip(HapticClip clip, PlayerInput playerInput)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="HapticSystem.HapticClip.html">HapticClip</a></td>
+        <td><span class="parametername">clip</span></td>
+        <td><p>Clip to play</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">PlayerInput</span></td>
+        <td><span class="parametername">playerInput</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="HapticSystem.HapticClipInstance.html">HapticClipInstance</a></td>
+        <td><p>Use HapticClipInstance to stop clip by using HapticManager.Stop method </p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="HapticSystem_HapticManager_PlayClip_" data-uid="HapticSystem.HapticManager.PlayClip*"></a>
+  <h4 id="HapticSystem_HapticManager_PlayClip_HapticSystem_HapticClip_System_Int32_" data-uid="HapticSystem.HapticManager.PlayClip(HapticSystem.HapticClip,System.Int32)">PlayClip(HapticClip, Int32)</h4>
+  <div class="markdown level1 summary"><p>Play a clip and return an Haptic Clip instance</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static HapticClipInstance PlayClip(HapticClip clip, int deviceID)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="HapticSystem.HapticClip.html">HapticClip</a></td>
+        <td><span class="parametername">clip</span></td>
+        <td><p>Clip to play</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">Int32</a></td>
+        <td><span class="parametername">deviceID</span></td>
+        <td><p>Target device </p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="HapticSystem.HapticClipInstance.html">HapticClipInstance</a></td>
+        <td><p>Use HapticClipInstance to stop clip by using HapticManager.Stop method </p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="HapticSystem_HapticManager_PlayClipOnAllGamepads_" data-uid="HapticSystem.HapticManager.PlayClipOnAllGamepads*"></a>
+  <h4 id="HapticSystem_HapticManager_PlayClipOnAllGamepads_HapticSystem_HapticClip_" data-uid="HapticSystem.HapticManager.PlayClipOnAllGamepads(HapticSystem.HapticClip)">PlayClipOnAllGamepads(HapticClip)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static HapticClipInstance PlayClipOnAllGamepads(HapticClip clip)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="HapticSystem.HapticClip.html">HapticClip</a></td>
+        <td><span class="parametername">clip</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="HapticSystem.HapticClipInstance.html">HapticClipInstance</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="HapticSystem_HapticManager_PlayClipOnGamepadIndex_" data-uid="HapticSystem.HapticManager.PlayClipOnGamepadIndex*"></a>
+  <h4 id="HapticSystem_HapticManager_PlayClipOnGamepadIndex_HapticSystem_HapticClip_System_Int32_" data-uid="HapticSystem.HapticManager.PlayClipOnGamepadIndex(HapticSystem.HapticClip,System.Int32)">PlayClipOnGamepadIndex(HapticClip, Int32)</h4>
+  <div class="markdown level1 summary"><p>Play a clip and return an Haptic Clip instance</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static HapticClipInstance PlayClipOnGamepadIndex(HapticClip clip, int targetGamepadIndex = -1)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="HapticSystem.HapticClip.html">HapticClip</a></td>
+        <td><span class="parametername">clip</span></td>
+        <td><p>Clip to play</p>
+</td>
+      </tr>
       <tr>
         <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">Int32</a></td>
         <td><span class="parametername">targetGamepadIndex</span></td>
-        <td></td>
+        <td><p>Target gamepad (-1 for all gamepads) </p>
+</td>
       </tr>
     </tbody>
   </table>
