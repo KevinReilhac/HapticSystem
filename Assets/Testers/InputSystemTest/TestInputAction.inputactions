@@ -1,0 +1,126 @@
+{
+    "name": "TestInputAction",
+    "maps": [
+        {
+            "name": "Main",
+            "id": "58b675cf-b01c-46ea-82b3-ff7a0a981e23",
+            "actions": [
+                {
+                    "name": "DeviceID",
+                    "type": "Button",
+                    "id": "29f0efd7-1dbf-469f-a266-c31f6bcf2b54",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
+                },
+                {
+                    "name": "InputDevice",
+                    "type": "Button",
+                    "id": "b9f8383b-536b-4880-9d91-51e47c1d0bef",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
+                },
+                {
+                    "name": "Gamepad",
+                    "type": "Button",
+                    "id": "d07cfab7-e63c-4d8f-888c-35556aed79f6",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
+                },
+                {
+                    "name": "PlayerInput",
+                    "type": "Button",
+                    "id": "f3f2dafc-5e4c-44ab-92c6-57bfdba4b4c4",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
+                },
+                {
+                    "name": "Loop",
+                    "type": "Button",
+                    "id": "d94a9af6-9ee7-4f02-93e5-98a97c75ac7c",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
+                }
+            ],
+            "bindings": [
+                {
+                    "name": "",
+                    "id": "777b4e62-ac51-4dd2-a0bd-d4377956e7c8",
+                    "path": "<Gamepad>/buttonSouth",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "Main",
+                    "action": "DeviceID",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "b5bb262b-4afe-461f-b264-59a577672078",
+                    "path": "<XInputController>/buttonEast",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "Main",
+                    "action": "InputDevice",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "0deb83fc-e838-45af-be12-e049139f53fd",
+                    "path": "<Gamepad>/buttonNorth",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "Main",
+                    "action": "Gamepad",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "475ed58b-a4ce-4e7c-b102-1ba1b941b282",
+                    "path": "<Gamepad>/buttonWest",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "Main",
+                    "action": "PlayerInput",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "627e3d9f-296d-4570-9dc1-9dd3f93b0004",
+                    "path": "<Gamepad>/rightTrigger",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Loop",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                }
+            ]
+        }
+    ],
+    "controlSchemes": [
+        {
+            "name": "Main",
+            "bindingGroup": "Main",
+            "devices": [
+                {
+                    "devicePath": "<Gamepad>",
+                    "isOptional": false,
+                    "isOR": false
+                }
+            ]
+        }
+    ]
+}

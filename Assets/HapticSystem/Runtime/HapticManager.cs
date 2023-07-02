@@ -34,7 +34,7 @@ namespace HapticSystem
         /// <param name="clip">Clip to play</param>
         /// <param name="targetGamepadIndex">Target gamepad (-1 for all gamepads) </param>
         /// <returns> Use HapticClipInstance to stop clip by using HapticManager.Stop method </returns>
-        public static HapticClipInstance PlayClip(HapticClip clip, int targetGamepadIndex = -1)
+        public static HapticClipInstance PlayClipOnGamepadIndex(HapticClip clip, int targetGamepadIndex = -1)
         {
             HapticClipInstance clipPlayer = new HapticClipInstance(clip, targetGamepadIndex);
 
@@ -55,20 +55,89 @@ namespace HapticSystem
             return (clipPlayer);
         }
 
+        public static HapticClipInstance PlayClipOnAllGamepads(HapticClip clip)
+        {
+            return (PlayClipOnGamepadIndex(clip, -1));
+        }
+
+        /// <summary>
+        /// Play a clip and return an Haptic Clip instance
+        /// </summary>
+        /// <param name="clip">Clip to play</param>
+        /// <param name="gamepad">Target gamepad</param>
+        /// <returns> Use HapticClipInstance to stop clip by using HapticManager.Stop method </returns>
+        public static HapticClipInstance PlayClip(HapticClip clip, Gamepad gamepad)
+        {
+            if (gamepad == null)
+            {
+                Debug.LogError("Gamepad is null.");
+                return (null);
+            }
+            return PlayClipOnGamepadIndex(clip, Gamepad.all.IndexOf(g => g == gamepad));
+        }
+
+        /// <summary>
+        /// Play a clip and return an Haptic Clip instance
+        /// </summary>
+        /// <param name="clip">Clip to play</param>
+        /// <param name="gamepad">Target gamepad</param>
+        /// <returns> Use HapticClipInstance to stop clip by using HapticManager.Stop method </returns>
+        public static HapticClipInstance PlayClip(HapticClip clip)
+        {
+            return (PlayClip(clip, Gamepad.current));
+        }
+
+        /// <summary>
+        /// Play a clip and return an Haptic Clip instance
+        /// </summary>
+        /// <param name="clip">Clip to play</param>
+        /// <param name="deviceID">Target device </param>
+        /// <returns> Use HapticClipInstance to stop clip by using HapticManager.Stop method </returns>
+        public static HapticClipInstance PlayClip(HapticClip clip, int deviceID)
+        {
+            InputDevice device = InputSystem.GetDeviceById(deviceID);
+            return PlayClip(clip, device);
+        }
+
+        /// <summary>
+        /// Play a clip and return an Haptic Clip instance
+        /// </summary>
+        /// <param name="clip">Clip to play</param>
+        /// <param name="playerIndex">Target playerInput</param>
+        /// <returns> Use HapticClipInstance to stop clip by using HapticManager.Stop method </returns>
+        public static HapticClipInstance PlayClip(HapticClip clip, PlayerInput playerInput)
+        {
+            InputDevice device = null;
+
+            if (playerInput.devices.Count == 0)
+                return null;
+            device = playerInput.devices[0].device;
+            return (PlayClip(clip, device));
+        }
+
+        /// <summary>
+        /// Play a clip and return an Haptic Clip instance
+        /// </summary>
+        /// <param name="clip">Clip to play</param>
+        /// <param name="device">Target device </param>
+        /// <returns> Use HapticClipInstance to stop clip by using HapticManager.Stop method </returns>
+        public static HapticClipInstance PlayClip(HapticClip clip, InputDevice device)
+        {
+            if (device is Gamepad gamepad)
+                return (PlayClip(clip, gamepad));
+            return (null);
+        }
+
         /// <summary>
         /// Create and play haptic clip
         /// </summary>
         /// <returns> Use HapticClipInstance to stop clip by using HapticManager.Stop method </returns>
-        public static HapticClipInstance PlayClip(TwoConstantRandomFloat01 strenght,
+        public static HapticClip CreateCustomClip(TwoConstantRandomFloat01 strenght,
             float lowFrequencyMultiplier = 1f, float highFrequencyMultiplier = 1f,
             bool useProgressionCurve = false, AnimationCurve progressionCurve = null,
-            bool loop = false, float duration = 0.3f,
-            int targetGamepadIndex = -1)
+            bool loop = false, float duration = 0.3f)
         {
-            return PlayClip
-            (
-                ScriptableObject.CreateInstance<HapticClip>().Setup
-                (
+            return ScriptableObject.CreateInstance<HapticClip>().Setup(
                     strenght,
                     lowFrequencyMultiplier,
                     highFrequencyMultiplier,
@@ -76,9 +145,7 @@ namespace HapticSystem
                     progressionCurve,
                     loop,
                     duration
-                ),
-                targetGamepadIndex
-            );
+                );
         }
 
         /// <summary>
@@ -229,7 +296,7 @@ namespace HapticSystem
 
     }
 
-    public class HapticManagerCoroutinePlayer : MonoBehaviour
+    internal class HapticManagerCoroutinePlayer : MonoBehaviour
     {
         private void Awake()
         {
