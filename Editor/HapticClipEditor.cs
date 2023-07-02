@@ -117,12 +117,13 @@ namespace HapticSystem.Editors
 
         private void StopClip()
         {
-            HapticManager.StopClipInstance(hapticClipPlayer);
+            if (hapticClipPlayer != null)
+                HapticManager.StopClipInstance(hapticClipPlayer);
         }
 
         public void PlayClip(int gamepadIndex = -1)
         {
-            hapticClipPlayer = HapticManager.PlayClip(target as HapticClip, gamepadIndex);
+            hapticClipPlayer = HapticManager.PlayClipOnGamepadIndex(target as HapticClip, gamepadIndex);
         }
 
         public bool IsAnyGamepadConnected()
