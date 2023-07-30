@@ -16,9 +16,9 @@ MonoBehaviour:
     random: 0
     minValue: 0.2
     maxValue: 0.2
-    value: 0.728
-  lowFrequencyMultiplier: 1
-  highFrequencyMultiplier: 1
+    value: 0.218
+  lowFrequencyMultiplier: 0.337
+  highFrequencyMultiplier: 0.484
   useProgressionCurve: 0
   progressionCurve:
     serializedVersion: 2
