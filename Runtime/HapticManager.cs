@@ -293,14 +293,5 @@ namespace HapticSystem
             CoroutinePlayer.StopCoroutine(routine);
         }
         #endregion
-
-    }
-
-    internal class HapticManagerCoroutinePlayer : MonoBehaviour
-    {
-        private void Awake()
-        {
-            DontDestroyOnLoad(gameObject);
-        }
     }
 }
