@@ -43,10 +43,13 @@ namespace HapticSystem
         /// </summary>
         /// <param name="clip"></param>
         /// <param name="targetGamepadIndex"></param>
-        public HapticClipInstance(HapticClip clip, int targetGamepadIndex = -1)
+        public HapticClipInstance(HapticClip clip, int targetGamepadIndex = -1, float strenghtMultiplier = 1f, float lowFrequencyMultiplier = 1f, float highFrequencyMultiplier = 1f)
         {
             this.targetGamepadIndex = targetGamepadIndex;
             this.clip = clip;
+            this.strenghtMultiplier = strenghtMultiplier;
+            this.lowFrequencyMultiplier = lowFrequencyMultiplier;
+            this.highFrequencyMultiplier = highFrequencyMultiplier;
             clip.RecomputeRandom();
             StartHapticClipUpdateCoroutine();
         }
