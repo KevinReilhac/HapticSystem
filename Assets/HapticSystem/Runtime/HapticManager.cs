@@ -69,10 +69,7 @@ namespace HapticSystem
         public static HapticClipInstance PlayClip(HapticClip clip, Gamepad gamepad, float strenghtMultiplier = 1f, float lowFrequencyMultiplier = 1f, float highFrequencyMultiplier = 1f)
         {
             if (gamepad == null)
-            {
-                Debug.LogError("Gamepad is null.");
                 return (null);
-            }
             return PlayClipOnGamepadIndex(clip, Gamepad.all.IndexOf(g => g == gamepad));
         }
 

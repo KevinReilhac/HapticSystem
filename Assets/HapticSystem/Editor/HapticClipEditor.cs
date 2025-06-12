@@ -12,6 +12,10 @@ namespace HapticSystem.Editors
         private SerializedProperty amplitude;
         private SerializedProperty useAmplitudeCurve;
         private SerializedProperty amplitudeCurve;
+        private SerializedProperty useLowProgressionCurve;
+        private SerializedProperty lowProgressionCurve;
+        private SerializedProperty useHighProgressionCurve;
+        private SerializedProperty highProgressionCurve;
         private SerializedProperty duration;
         private SerializedProperty lowFrequencyMultiplier;
         private SerializedProperty highFrequencyMultiplier;
@@ -24,11 +28,15 @@ namespace HapticSystem.Editors
         public void OnEnable()
         {
             amplitude = serializedObject.FindProperty("strenght");
-            useAmplitudeCurve = serializedObject.FindProperty("useProgressionCurve");
-            amplitudeCurve = serializedObject.FindProperty("progressionCurve");
+            useAmplitudeCurve = serializedObject.FindProperty("useGlobalProgressionCurve");
+            amplitudeCurve = serializedObject.FindProperty("globalProgressionCurve");
             duration = serializedObject.FindProperty("duration");
             lowFrequencyMultiplier = serializedObject.FindProperty("lowFrequencyMultiplier");
             highFrequencyMultiplier = serializedObject.FindProperty("highFrequencyMultiplier");
+            useLowProgressionCurve = serializedObject.FindProperty("useLowProgressionCurve");
+            lowProgressionCurve = serializedObject.FindProperty("lowProgressionCurve");
+            useHighProgressionCurve = serializedObject.FindProperty("useHighProgressionCurve");
+            highProgressionCurve = serializedObject.FindProperty("highProgressionCurve");
             loop = serializedObject.FindProperty("loop");
             updateCoroutine = EditorCoroutineUtility.StartCoroutine(UpdateCoroutine(), this);
         }
@@ -81,12 +89,9 @@ namespace HapticSystem.Editors
             EditorGUILayout.PropertyField(highFrequencyMultiplier);
             EditorGUILayout.Space();
 
-            GUILayout.BeginHorizontal();
-            EditorGUILayout.PropertyField(useAmplitudeCurve, new GUIContent("Progression Curve"));
-            GUI.enabled = useAmplitudeCurve.boolValue;
-            EditorGUILayout.PropertyField(amplitudeCurve, GUIContent.none);
-            GUI.enabled = true;
-            GUILayout.EndHorizontal();
+            DrawProgressionCurve("Global Progression Curve", amplitudeCurve, useAmplitudeCurve);
+            DrawProgressionCurve("Low Progression Curve", lowProgressionCurve, useLowProgressionCurve);
+            DrawProgressionCurve("High Progression Curve", highProgressionCurve, useHighProgressionCurve);
 
             EditorGUILayout.Space();
             EditorGUILayout.PropertyField(loop);
@@ -113,6 +118,16 @@ namespace HapticSystem.Editors
                 GUILayout.Label("Or press A on your gamepad");
             }
             GUI.enabled = true;
+        }
+
+        private void DrawProgressionCurve(string label, SerializedProperty curve, SerializedProperty useCurve)
+        {
+            GUILayout.BeginHorizontal();
+            EditorGUILayout.PropertyField(useCurve, new GUIContent(label));
+            GUI.enabled = useCurve.boolValue;
+            EditorGUILayout.PropertyField(curve, GUIContent.none);
+            GUI.enabled = true;
+            GUILayout.EndHorizontal();
         }
 
         private void StopClip()
