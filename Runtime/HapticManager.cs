@@ -10,8 +10,8 @@ namespace HapticSystem
     /// </summary>
     public static class HapticManager
     {
-        private static Dictionary<int, MotorsSpeed> currentSpeeds = new Dictionary<int, MotorsSpeed>();
-        private static Dictionary<int, List<HapticClipInstance>> playingClips = new Dictionary<int, List<HapticClipInstance>>();
+        internal static Dictionary<int, MotorsSpeed> currentSpeeds = new Dictionary<int, MotorsSpeed>();
+        internal static Dictionary<int, List<HapticClipInstance>> playingClips = new Dictionary<int, List<HapticClipInstance>>();
 
         private static float _strenghtMultiplier = 1f;
 
@@ -282,6 +282,7 @@ namespace HapticSystem
 
         internal static Coroutine StartCoroutine(IEnumerator routine)
         {
+            Debug.Log("StartCoroutine " + routine.ToString());
             return CoroutinePlayer.StartCoroutine(routine);
         }
 
