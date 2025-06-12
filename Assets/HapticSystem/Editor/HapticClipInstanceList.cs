@@ -123,7 +123,6 @@ public class HapticClipInstanceList : EditorWindow
         scrollPosition = EditorGUILayout.BeginScrollView(scrollPosition);
         
         var playingClips = GetAllPlayingClips();
-        Debug.Log("playingClips.Count: " + playingClips.Count);
         
         if (playingClips.Count == 0)
         {
