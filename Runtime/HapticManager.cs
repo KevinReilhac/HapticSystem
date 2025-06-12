@@ -10,10 +10,13 @@ namespace HapticSystem
     /// </summary>
     public static class HapticManager
     {
+        private const float UPDATE_MOTORS_SPEEDS_INTERVAL = 0.01f;
         internal static Dictionary<int, MotorsSpeed> currentSpeeds = new Dictionary<int, MotorsSpeed>();
+        internal static Dictionary<int, MotorsSpeed> lastPlayedSpeeds = new Dictionary<int, MotorsSpeed>();
         internal static Dictionary<int, List<HapticClipInstance>> playingClips = new Dictionary<int, List<HapticClipInstance>>();
 
         private static float _strenghtMultiplier = 1f;
+        private static List<int> askedTargetsUpdateMotors = new List<int>();
 
         #region PUBLICS
         /// <summary>
@@ -208,17 +211,39 @@ namespace HapticSystem
                 {
                     currentMotorSpeed.LowFrequency = newLowFrequency;
                     currentMotorSpeed.HighFrequency = newHighFrequency;
-                    UpdateMotorsSpeeds(targetGamepad);
+                    AskUpdateMotorsSpeeds(targetGamepad);
                 }
             }
             else
             {
                 currentSpeeds.Add(targetGamepad, new MotorsSpeed(newLowFrequency, newHighFrequency));
-                UpdateMotorsSpeeds(targetGamepad);
+                AskUpdateMotorsSpeeds(targetGamepad);
             }
         }
 
-        internal static void UpdateMotorsSpeeds(int targetGamepad)
+        internal static void AskUpdateMotorsSpeeds(int targetGamepad)
+        {
+            if (!askedTargetsUpdateMotors.Contains(targetGamepad))
+                askedTargetsUpdateMotors.Add(targetGamepad);
+        }
+
+        internal static IEnumerator UpdateMotorsSpeedsCoroutine()
+        {
+            List<int> targetsToUpdate = null;
+            while (true)
+            {
+                targetsToUpdate = new List<int>(askedTargetsUpdateMotors);
+                foreach (int targetGamepad in targetsToUpdate)
+                {
+                    UpdateMotorsSpeedsForTarget(targetGamepad);
+                    yield return null;
+                }
+                askedTargetsUpdateMotors.Clear();
+                yield return new WaitForSeconds(UPDATE_MOTORS_SPEEDS_INTERVAL);
+            }
+        }
+
+        internal static void UpdateMotorsSpeedsForTarget(int targetGamepad)
         {
             float lowFrequency = 0;
             float highFrequency = 0;
@@ -233,7 +258,18 @@ namespace HapticSystem
                 Debug.LogErrorFormat("{0} gamepad index is invalid.", targetGamepad);
                 return;
             }
+            if (lastPlayedSpeeds.TryGetValue(targetGamepad, out MotorsSpeed lastPlayed))
+            {
+                if (lastPlayed.LowFrequency == lowFrequency && lastPlayed.HighFrequency == highFrequency)
+                    return;
+            }
+            Debug.LogFormat("UpdateMotorsSpeedsForTarget {0} {1} {2}", targetGamepad, lowFrequency, highFrequency);
             Gamepad.all[targetGamepad].SetMotorSpeeds(lowFrequency, highFrequency);
+
+            if (!lastPlayedSpeeds.ContainsKey(targetGamepad))
+                lastPlayedSpeeds.Add(targetGamepad, new MotorsSpeed(lowFrequency, highFrequency));
+            else
+                lastPlayedSpeeds[targetGamepad] = new MotorsSpeed(lowFrequency, highFrequency);
         }
 
 
@@ -274,6 +310,7 @@ namespace HapticSystem
                 {
                     GameObject go = new GameObject("CoroutinePlayer");
                     _coroutinePlayer = go.AddComponent<HapticManagerCoroutinePlayer>();
+                    _coroutinePlayer.StartCoroutine(UpdateMotorsSpeedsCoroutine());
                 }
 
                 return (_coroutinePlayer);
