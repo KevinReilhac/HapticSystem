@@ -17,7 +17,7 @@ namespace HapticSystem
         [SerializeField] private bool useProgressionCurve = false;
         [SerializeField] [BoundedCurve] private AnimationCurve progressionCurve = new AnimationCurve(new Keyframe[] { new Keyframe(0f, 0f), new Keyframe(1f, 1f) });
         [SerializeField] private bool loop = false;
-        [SerializeField] [Min(0)] private float duration = 0.3f;
+        [SerializeField] [Min(0.01f)] private float duration = 0.3f;
 
         internal HapticClip Setup(TwoConstantRandomFloat01 strenght,
             float lowFrequencyMultiplier = 1f, float highFrequencyMultiplier = 1f,
@@ -56,7 +56,7 @@ namespace HapticSystem
             highFrequency = progressionCurveEvaluation * strenght.GetValue() * HapticManager.StrenghtMultiplier * highFrequencyMultiplier;
         }
 
-        public float Duration => duration;
+        public float Duration => Mathf.Max(duration, 0.01f); // Prevent division by 0
         public bool UseProgressionCurve => useProgressionCurve;
         public bool Loop => loop;
     }
