@@ -2,11 +2,12 @@ using UnityEngine;
 
 namespace HapticSystem
 {
-    internal class HapticManagerCoroutinePlayer : MonoBehaviour
+    public class HapticManagerCoroutinePlayer : MonoBehaviour
     {
         private void Awake()
         {
             DontDestroyOnLoad(gameObject);
+            gameObject.AddComponent<HapticManagerProcessor>();
         }
 
         private void OnApplicationFocus(bool hasFocus)
