@@ -1,6 +1,6 @@
 {
   "name": "com.kebab.haptic_system",
-  "version": "1.0.0",
+  "version": "0.2.0",
   "displayName": "Haptic System",
   "description": "Make your gamepad vibrate",
   "unity": "2019.1",
