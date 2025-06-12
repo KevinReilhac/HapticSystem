@@ -34,9 +34,9 @@ namespace HapticSystem
         /// <param name="clip">Clip to play</param>
         /// <param name="targetGamepadIndex">Target gamepad (-1 for all gamepads) </param>
         /// <returns> Use HapticClipInstance to stop clip by using HapticManager.Stop method </returns>
-        public static HapticClipInstance PlayClipOnGamepadIndex(HapticClip clip, int targetGamepadIndex = -1)
+        public static HapticClipInstance PlayClipOnGamepadIndex(HapticClip clip, int targetGamepadIndex = -1, float strenghtMultiplier = 1f, float lowFrequencyMultiplier = 1f, float highFrequencyMultiplier = 1f)
         {
-            HapticClipInstance clipPlayer = new HapticClipInstance(clip, targetGamepadIndex);
+            HapticClipInstance clipPlayer = new HapticClipInstance(clip, targetGamepadIndex, strenghtMultiplier, lowFrequencyMultiplier, highFrequencyMultiplier);
 
             if (targetGamepadIndex == -1)
             {
@@ -55,9 +55,9 @@ namespace HapticSystem
             return (clipPlayer);
         }
 
-        public static HapticClipInstance PlayClipOnAllGamepads(HapticClip clip)
+        public static HapticClipInstance PlayClipOnAllGamepads(HapticClip clip, float strenghtMultiplier = 1f, float lowFrequencyMultiplier = 1f, float highFrequencyMultiplier = 1f)
         {
-            return (PlayClipOnGamepadIndex(clip, -1));
+            return (PlayClipOnGamepadIndex(clip, -1, strenghtMultiplier, lowFrequencyMultiplier, highFrequencyMultiplier));
         }
 
         /// <summary>
@@ -66,7 +66,7 @@ namespace HapticSystem
         /// <param name="clip">Clip to play</param>
         /// <param name="gamepad">Target gamepad</param>
         /// <returns> Use HapticClipInstance to stop clip by using HapticManager.Stop method </returns>
-        public static HapticClipInstance PlayClip(HapticClip clip, Gamepad gamepad)
+        public static HapticClipInstance PlayClip(HapticClip clip, Gamepad gamepad, float strenghtMultiplier = 1f, float lowFrequencyMultiplier = 1f, float highFrequencyMultiplier = 1f)
         {
             if (gamepad == null)
             {
@@ -82,9 +82,9 @@ namespace HapticSystem
         /// <param name="clip">Clip to play</param>
         /// <param name="gamepad">Target gamepad</param>
         /// <returns> Use HapticClipInstance to stop clip by using HapticManager.Stop method </returns>
-        public static HapticClipInstance PlayClip(HapticClip clip)
+        public static HapticClipInstance PlayClip(HapticClip clip, float strenghtMultiplier = 1f, float lowFrequencyMultiplier = 1f, float highFrequencyMultiplier = 1f)
         {
-            return (PlayClip(clip, Gamepad.current));
+            return (PlayClip(clip, Gamepad.current, strenghtMultiplier, lowFrequencyMultiplier, highFrequencyMultiplier));
         }
 
         /// <summary>
@@ -93,10 +93,10 @@ namespace HapticSystem
         /// <param name="clip">Clip to play</param>
         /// <param name="deviceID">Target device </param>
         /// <returns> Use HapticClipInstance to stop clip by using HapticManager.Stop method </returns>
-        public static HapticClipInstance PlayClip(HapticClip clip, int deviceID)
+        public static HapticClipInstance PlayClip(HapticClip clip, int deviceID, float strenghtMultiplier = 1f, float lowFrequencyMultiplier = 1f, float highFrequencyMultiplier = 1f)
         {
             InputDevice device = InputSystem.GetDeviceById(deviceID);
-            return PlayClip(clip, device);
+            return PlayClip(clip, device, strenghtMultiplier, lowFrequencyMultiplier, highFrequencyMultiplier);
         }
 
         /// <summary>
@@ -105,14 +105,14 @@ namespace HapticSystem
         /// <param name="clip">Clip to play</param>
         /// <param name="playerIndex">Target playerInput</param>
         /// <returns> Use HapticClipInstance to stop clip by using HapticManager.Stop method </returns>
-        public static HapticClipInstance PlayClip(HapticClip clip, PlayerInput playerInput)
+        public static HapticClipInstance PlayClip(HapticClip clip, PlayerInput playerInput, float strenghtMultiplier = 1f, float lowFrequencyMultiplier = 1f, float highFrequencyMultiplier = 1f)
         {
             InputDevice device = null;
 
             if (playerInput.devices.Count == 0)
                 return null;
             device = playerInput.devices[0].device;
-            return (PlayClip(clip, device));
+            return (PlayClip(clip, device, strenghtMultiplier, lowFrequencyMultiplier, highFrequencyMultiplier));
         }
 
         /// <summary>
@@ -121,10 +121,10 @@ namespace HapticSystem
         /// <param name="clip">Clip to play</param>
         /// <param name="device">Target device </param>
         /// <returns> Use HapticClipInstance to stop clip by using HapticManager.Stop method </returns>
-        public static HapticClipInstance PlayClip(HapticClip clip, InputDevice device)
+        public static HapticClipInstance PlayClip(HapticClip clip, InputDevice device, float strenghtMultiplier = 1f, float lowFrequencyMultiplier = 1f, float highFrequencyMultiplier = 1f)
         {
             if (device is Gamepad gamepad)
-                return (PlayClip(clip, gamepad));
+                return (PlayClip(clip, gamepad, strenghtMultiplier, lowFrequencyMultiplier, highFrequencyMultiplier));
             return (null);
         }
 
