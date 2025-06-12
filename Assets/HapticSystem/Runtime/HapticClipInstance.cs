@@ -84,6 +84,7 @@ namespace HapticSystem
                 }
             } while(clip.Loop);
 
+
             HapticManager.StopClipInstance(this);
         }
 
