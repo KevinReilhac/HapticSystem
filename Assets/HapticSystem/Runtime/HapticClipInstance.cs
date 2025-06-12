@@ -16,6 +16,10 @@ namespace HapticSystem
         public int targetGamepadIndex {get; private set;} = -1;
         public bool isPlaying {get; private set;} = false;
         public float progress {get; private set;} = 0;
+        public float speedMultiplier {get; set;} = 1f;
+        public float strenghtMultiplier {get; set;} = 1f;
+        public float lowFrequencyMultiplier {get; set;} = 1f;
+        public float highFrequencyMultiplier {get; set;} = 1f;
 
         private Coroutine coroutine;
         #if UNITY_EDITOR
@@ -25,7 +29,12 @@ namespace HapticSystem
 
         internal void EvaluateStrenghts(out float lowFrequency, out float highFrequency)
         {
-            clip.EvaluateStrenghts(progress, out lowFrequency, out highFrequency);
+            float progress = this.progress * speedMultiplier;
+            if (progress > 1f)
+                progress = progress % 1f;
+            clip.EvaluateStrenghts(progress, out float evalLowFrequency, out float evalHighFrequency);
+            lowFrequency = evalLowFrequency * strenghtMultiplier * lowFrequencyMultiplier;
+            highFrequency = evalHighFrequency * strenghtMultiplier * highFrequencyMultiplier;
         }
 
         /// <summary>

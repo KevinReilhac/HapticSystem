@@ -9,6 +9,10 @@ public class Tester : MonoBehaviour
 {
     public HapticClip clip = null;
     public HapticClip loopClip = null;
+    [Range(0f, 1f)] public float strenghtMultiplier = 1f;
+    [Range(0f, 1f)] public float lowFrequencyMultiplier = 1f;
+    [Range(0f, 1f)] public float highFrequencyMultiplier = 1f;
+    public float speedMultiplier = 1f;
 
 
     private HapticClipInstance loopClipInstance = null;
@@ -17,6 +21,18 @@ public class Tester : MonoBehaviour
     private void Awake()
     {
         playerInput = GetComponent<PlayerInput>();
+    }
+
+    private void Update()
+    {
+        HapticManager.StrenghtMultiplier = strenghtMultiplier;
+        if (loopClipInstance != null)
+        {
+            loopClipInstance.speedMultiplier = speedMultiplier;
+            loopClipInstance.strenghtMultiplier = strenghtMultiplier;
+            loopClipInstance.lowFrequencyMultiplier = lowFrequencyMultiplier;
+            loopClipInstance.highFrequencyMultiplier = highFrequencyMultiplier;
+        }
     }
 
     public void DeviceId(InputAction.CallbackContext callback)

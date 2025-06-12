@@ -9,7 +9,7 @@
                     "name": "DeviceID",
                     "type": "Button",
                     "id": "29f0efd7-1dbf-469f-a266-c31f6bcf2b54",
-                    "expectedControlType": "Button",
+                    "expectedControlType": "",
                     "processors": "",
                     "interactions": "",
                     "initialStateCheck": false
@@ -18,7 +18,7 @@
                     "name": "InputDevice",
                     "type": "Button",
                     "id": "b9f8383b-536b-4880-9d91-51e47c1d0bef",
-                    "expectedControlType": "Button",
+                    "expectedControlType": "",
                     "processors": "",
                     "interactions": "",
                     "initialStateCheck": false
@@ -27,7 +27,7 @@
                     "name": "Gamepad",
                     "type": "Button",
                     "id": "d07cfab7-e63c-4d8f-888c-35556aed79f6",
-                    "expectedControlType": "Button",
+                    "expectedControlType": "",
                     "processors": "",
                     "interactions": "",
                     "initialStateCheck": false
@@ -36,7 +36,7 @@
                     "name": "PlayerInput",
                     "type": "Button",
                     "id": "f3f2dafc-5e4c-44ab-92c6-57bfdba4b4c4",
-                    "expectedControlType": "Button",
+                    "expectedControlType": "",
                     "processors": "",
                     "interactions": "",
                     "initialStateCheck": false
@@ -45,7 +45,7 @@
                     "name": "Loop",
                     "type": "Button",
                     "id": "d94a9af6-9ee7-4f02-93e5-98a97c75ac7c",
-                    "expectedControlType": "Button",
+                    "expectedControlType": "",
                     "processors": "",
                     "interactions": "",
                     "initialStateCheck": false
@@ -66,7 +66,7 @@
                 {
                     "name": "",
                     "id": "b5bb262b-4afe-461f-b264-59a577672078",
-                    "path": "<XInputController>/buttonEast",
+                    "path": "<Gamepad>/buttonEast",
                     "interactions": "",
                     "processors": "",
                     "groups": "Main",

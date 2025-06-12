@@ -44,16 +44,16 @@ namespace HapticSystem
         {
             if (!useProgressionCurve || progressionCurve == null)
             {
-                lowFrequency = strenght.GetValue() * lowFrequencyMultiplier;
-                highFrequency = strenght.GetValue() * highFrequencyMultiplier;
+                lowFrequency = strenght.GetValue() * HapticManager.StrenghtMultiplier * lowFrequencyMultiplier;
+                highFrequency = strenght.GetValue() * HapticManager.StrenghtMultiplier * highFrequencyMultiplier;
                 return;
             }
 
             progress = Mathf.Clamp01(progress);
             float progressionCurveEvaluation = progressionCurve.Evaluate(progress);
 
-            lowFrequency = progressionCurveEvaluation * strenght.GetValue() * lowFrequencyMultiplier;
-            highFrequency = progressionCurveEvaluation * strenght.GetValue() * highFrequencyMultiplier;
+            lowFrequency = progressionCurveEvaluation * strenght.GetValue() * HapticManager.StrenghtMultiplier * lowFrequencyMultiplier;
+            highFrequency = progressionCurveEvaluation * strenght.GetValue() * HapticManager.StrenghtMultiplier * highFrequencyMultiplier;
         }
 
         public float Duration => duration;

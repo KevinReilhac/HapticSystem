@@ -16,10 +16,10 @@ MonoBehaviour:
     random: 0
     minValue: 0.2
     maxValue: 0.2
-    value: 0.218
-  lowFrequencyMultiplier: 0.337
+    value: 1
+  lowFrequencyMultiplier: 0.79
   highFrequencyMultiplier: 0.484
-  useProgressionCurve: 0
+  useProgressionCurve: 1
   progressionCurve:
     serializedVersion: 2
     m_Curve:
@@ -33,8 +33,17 @@ MonoBehaviour:
       inWeight: 0
       outWeight: 0
     - serializedVersion: 3
-      time: 1
+      time: 0.5
       value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0
+      outWeight: 0
+    - serializedVersion: 3
+      time: 1
+      value: 0
       inSlope: 0
       outSlope: 0
       tangentMode: 0
