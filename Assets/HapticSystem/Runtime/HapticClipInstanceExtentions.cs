@@ -13,5 +13,10 @@ namespace HapticSystem
                 return false;
             return clipInstance.isPlaying;
         }
+
+        public static void Stop(this HapticClipInstance clipInstance)
+        {
+            HapticManager.StopClipInstance(clipInstance);
+        }
     }
 }

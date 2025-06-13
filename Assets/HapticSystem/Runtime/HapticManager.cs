@@ -165,7 +165,7 @@ namespace HapticSystem
         {
             if (clipInstance == null)
                 return;
-            clipInstance.Stop();
+            clipInstance.Dispose();
             if (clipInstance.targetGamepadIndex == -1)
             {
                 foreach (var item in playingClips)
