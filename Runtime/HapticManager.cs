@@ -1,7 +1,5 @@
 using System.Collections;
 using System.Collections.Generic;
-using System.Threading;
-using System.Collections.Concurrent;
 using UnityEngine;
 using UnityEngine.InputSystem;
 
@@ -19,17 +17,6 @@ namespace HapticSystem
 
         private static float _strenghtMultiplier = 1f;
         private static List<int> askedTargetsUpdateMotors = new List<int>();
-        private static Thread updateThread;
-        private static bool isThreadRunning = false;
-        private static ConcurrentQueue<MotorUpdateCommand> motorUpdateQueue = new ConcurrentQueue<MotorUpdateCommand>();
-        private static object lockObject = new object();
-
-        private struct MotorUpdateCommand
-        {
-            public int targetGamepad;
-            public float lowFrequency;
-            public float highFrequency;
-        }
 
         #region PUBLICS
         /// <summary>
@@ -240,77 +227,43 @@ namespace HapticSystem
                 askedTargetsUpdateMotors.Add(targetGamepad);
         }
 
-        internal static void StartUpdateThread()
+        internal static IEnumerator UpdateMotorsSpeedsCoroutine()
         {
-            if (isThreadRunning)
-                return;
-
-            isThreadRunning = true;
-            updateThread = new Thread(UpdateMotorsThread);
-            updateThread.IsBackground = true;
-            updateThread.Start();
-        }
-
-        internal static void StopUpdateThread()
-        {
-            if (!isThreadRunning)
-                return;
-
-            isThreadRunning = false;
-            updateThread?.Join();
-            updateThread = null;
-        }
-
-        private static void UpdateMotorsThread()
-        {
-            while (isThreadRunning)
+            List<int> targetsToUpdate = null;
+            while (true)
             {
-                List<int> targetsToUpdate;
-                lock (lockObject)
-                {
-                    targetsToUpdate = new List<int>(askedTargetsUpdateMotors);
-                    askedTargetsUpdateMotors.Clear();
-                }
-
+                targetsToUpdate = new List<int>(askedTargetsUpdateMotors);
                 foreach (int targetGamepad in targetsToUpdate)
                 {
-                    if (currentSpeeds.TryGetValue(targetGamepad, out MotorsSpeed motorsSpeed))
-                    {
-                        motorUpdateQueue.Enqueue(new MotorUpdateCommand
-                        {
-                            targetGamepad = targetGamepad,
-                            lowFrequency = motorsSpeed.LowFrequency,
-                            highFrequency = motorsSpeed.HighFrequency
-                        });
-                    }
+                    UpdateMotorsSpeedsForTarget(targetGamepad);
+                    yield return null;
                 }
-
-                Thread.Sleep((int)(UPDATE_MOTORS_SPEEDS_INTERVAL * 1000));
+                askedTargetsUpdateMotors.Clear();
+                yield return new WaitForSeconds(UPDATE_MOTORS_SPEEDS_INTERVAL);
             }
         }
 
-        internal static void ProcessMotorUpdates()
+        internal static void UpdateMotorsSpeedsForTarget(int targetGamepad)
         {
-            while (motorUpdateQueue.TryDequeue(out MotorUpdateCommand command))
+            float lowFrequency = 0;
+            float highFrequency = 0;
+            if (currentSpeeds.TryGetValue(targetGamepad, out MotorsSpeed motorsSpeed))
             {
-                UpdateMotorsSpeedsForTarget(command.targetGamepad, command.lowFrequency, command.highFrequency);
+                lowFrequency = motorsSpeed.LowFrequency;
+                highFrequency = motorsSpeed.HighFrequency;
             }
-        }
 
-        internal static void UpdateMotorsSpeedsForTarget(int targetGamepad, float lowFrequency, float highFrequency)
-        {
             if (targetGamepad < 0 || targetGamepad >= Gamepad.all.Count)
             {
                 Debug.LogErrorFormat("{0} gamepad index is invalid.", targetGamepad);
                 return;
             }
-
             if (lastPlayedSpeeds.TryGetValue(targetGamepad, out MotorsSpeed lastPlayed))
             {
                 if (lastPlayed.LowFrequency == lowFrequency && lastPlayed.HighFrequency == highFrequency)
                     return;
             }
-
+            Debug.LogFormat("UpdateMotorsSpeedsForTarget {0} {1} {2}", targetGamepad, lowFrequency, highFrequency);
             Gamepad.all[targetGamepad].SetMotorSpeeds(lowFrequency, highFrequency);
 
             if (!lastPlayedSpeeds.ContainsKey(targetGamepad))
@@ -318,6 +271,7 @@ namespace HapticSystem
             else
                 lastPlayedSpeeds[targetGamepad] = new MotorsSpeed(lowFrequency, highFrequency);
         }
+
 
         #endregion
 
@@ -356,7 +310,7 @@ namespace HapticSystem
                 {
                     GameObject go = new GameObject("CoroutinePlayer");
                     _coroutinePlayer = go.AddComponent<HapticManagerCoroutinePlayer>();
-                    StartUpdateThread();
+                    _coroutinePlayer.StartCoroutine(UpdateMotorsSpeedsCoroutine());
                 }
 
                 return (_coroutinePlayer);
