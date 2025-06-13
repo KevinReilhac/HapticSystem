@@ -9,9 +9,10 @@ public class Tester : MonoBehaviour
 {
     public HapticClip clip = null;
     public HapticClip loopClip = null;
-    [Range(0f, 1f)] public float strenghtMultiplier = 1f;
-    [Range(0f, 1f)] public float lowFrequencyMultiplier = 1f;
-    [Range(0f, 1f)] public float highFrequencyMultiplier = 1f;
+    [Range(0f, 1f)] public float loopStrenghtMultiplier = 1f;
+    [Range(0f, 1f)] public float loopLowFrequencyMultiplier = 1f;
+    [Range(0f, 1f)] public float loopHighFrequencyMultiplier = 1f;
+    [Range(0f, 1f)] public float simpleStrenghtMultiplier = 1f;
     public float speedMultiplier = 1f;
 
 
@@ -25,13 +26,13 @@ public class Tester : MonoBehaviour
 
     private void Update()
     {
-        HapticManager.StrenghtMultiplier = strenghtMultiplier;
+        HapticManager.StrenghtMultiplier = loopStrenghtMultiplier;
         if (loopClipInstance != null)
         {
             loopClipInstance.speedMultiplier = speedMultiplier;
-            loopClipInstance.strenghtMultiplier = strenghtMultiplier;
-            loopClipInstance.lowFrequencyMultiplier = lowFrequencyMultiplier;
-            loopClipInstance.highFrequencyMultiplier = highFrequencyMultiplier;
+            loopClipInstance.strenghtMultiplier = loopStrenghtMultiplier;
+            loopClipInstance.lowFrequencyMultiplier = loopLowFrequencyMultiplier;
+            loopClipInstance.highFrequencyMultiplier = loopHighFrequencyMultiplier;
         }
     }
 
@@ -39,28 +40,28 @@ public class Tester : MonoBehaviour
     {
         if (!callback.started) return;
         int id = playerInput.devices[0].deviceId;
-        HapticManager.PlayClip(clip, id);
+        HapticManager.PlayClip(clip, id, simpleStrenghtMultiplier);
         Debug.Log("Play with device ID");
     }
 
     public void InputDevice(InputAction.CallbackContext callback)
     {
         if (!callback.started) return;
-        HapticManager.PlayClip(clip, playerInput.devices[0].device);
+        HapticManager.PlayClip(clip, playerInput.devices[0].device, simpleStrenghtMultiplier);
         Debug.Log("Play with InputDevice");
     }
 
     public void PlayerInput(InputAction.CallbackContext callback)
     {
         if (!callback.started) return;
-        HapticManager.PlayClip(clip, playerInput);
+        HapticManager.PlayClip(clip, playerInput, simpleStrenghtMultiplier);
         Debug.Log("Play withPlayerInput");
     }
 
     public void Gamepad_(InputAction.CallbackContext callback)
     {
         if (!callback.started) return;
-        HapticManager.PlayClip(clip, Gamepad.current);
+        HapticManager.PlayClip(clip, Gamepad.current, simpleStrenghtMultiplier);
     }
 
     public void Loop(InputAction.CallbackContext callback)

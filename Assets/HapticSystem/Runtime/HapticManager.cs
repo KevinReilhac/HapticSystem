@@ -82,7 +82,7 @@ namespace HapticSystem
         {
             if (gamepad == null)
                 return (null);
-            return PlayClipOnGamepadIndex(clip, Gamepad.all.IndexOf(g => g == gamepad));
+            return PlayClipOnGamepadIndex(clip, Gamepad.all.IndexOf(g => g == gamepad), strenghtMultiplier, lowFrequencyMultiplier, highFrequencyMultiplier);
         }
 
         /// <summary>
