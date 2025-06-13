@@ -14,12 +14,12 @@ namespace HapticSystem
     {
         public HapticClip clip {get; private set;} = null;
         public int targetGamepadIndex {get; private set;} = -1;
-        public bool isPlaying {get; private set;} = false;
         public float progress {get; private set;} = 0;
         public float speedMultiplier {get; set;} = 1f;
         public float strenghtMultiplier {get; set;} = 1f;
         public float lowFrequencyMultiplier {get; set;} = 1f;
         public float highFrequencyMultiplier {get; set;} = 1f;
+        internal bool isPlaying {get; private set;} = false;
 
         private Coroutine coroutine;
         #if UNITY_EDITOR
@@ -59,7 +59,7 @@ namespace HapticSystem
             isPlaying = true;
             #if UNITY_EDITOR
             if (!Application.isPlaying)
-                editorCoroutine = EditorCoroutineUtility.StartCoroutineOwnerless(HapticClipUpdate());
+                editorCoroutine = EditorCoroutineUtility.StartCoroutineOwnerless(HapticClipUpdate(true));
             else
                 coroutine = HapticManager.StartCoroutine(HapticClipUpdate());
             #else
@@ -67,7 +67,7 @@ namespace HapticSystem
             #endif
         }
 
-        internal IEnumerator HapticClipUpdate()
+        internal IEnumerator HapticClipUpdate(bool forceUpdate = false)
         {
             float endTime = 0f;
             float startTime = 0f;
@@ -82,13 +82,15 @@ namespace HapticSystem
                     {
                         progress = (Time.realtimeSinceStartup - startTime) / clip.Duration;
                         HapticManager.RecomputeSpeeds();
+                        if (forceUpdate)
+                            HapticManager.ForceUpdateMotorsSpeedsForAllTargets();
                     }
                     yield return null;
                 }
             } while(clip.Loop);
 
 
-            HapticManager.StopClipInstance(this);
+            HapticManager.StopClipInstance(this, forceUpdate);
         }
 
         internal void Stop()

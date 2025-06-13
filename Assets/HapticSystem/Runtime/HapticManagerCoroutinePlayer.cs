@@ -9,7 +9,7 @@ namespace HapticSystem
             DontDestroyOnLoad(gameObject);
         }
 
-        private void OnApplicationFocus(bool hasFocus)
+        private void OnApplicationQuit()
         {
             HapticManager.StopAllClipInstances();
         }

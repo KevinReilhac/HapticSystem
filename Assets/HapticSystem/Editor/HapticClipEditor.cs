@@ -71,7 +71,7 @@ namespace HapticSystem.Editors
                         }
                     }
                 }
-                yield return null;
+                yield return new EditorWaitForSeconds(0.1f);
             }
         }
 
@@ -83,7 +83,6 @@ namespace HapticSystem.Editors
 
         public override void OnInspectorGUI()
         {
-            UpdateCoroutine();
             EditorGUILayout.PropertyField(amplitude);
             EditorGUILayout.PropertyField(lowFrequencyMultiplier);
             EditorGUILayout.PropertyField(highFrequencyMultiplier);

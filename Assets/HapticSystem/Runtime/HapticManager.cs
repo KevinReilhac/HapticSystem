@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using System.Threading.Tasks;
 using UnityEngine;
 using UnityEngine.InputSystem;
 
@@ -58,6 +59,14 @@ namespace HapticSystem
             return (clipPlayer);
         }
 
+        /// <summary>
+        /// Play a clip on all gamepads
+        /// </summary>
+        /// <param name="clip">Clip to play</param>
+        /// <param name="strenghtMultiplier">Strenght multiplier (optional)</param>
+        /// <param name="lowFrequencyMultiplier">Low frequency multiplier (optional)</param>
+        /// <param name="highFrequencyMultiplier">High frequency multiplier (optional)</param>
+        /// <returns> Use HapticClipInstance to stop clip by using HapticManager.Stop method </returns>
         public static HapticClipInstance PlayClipOnAllGamepads(HapticClip clip, float strenghtMultiplier = 1f, float lowFrequencyMultiplier = 1f, float highFrequencyMultiplier = 1f)
         {
             return (PlayClipOnGamepadIndex(clip, -1, strenghtMultiplier, lowFrequencyMultiplier, highFrequencyMultiplier));
@@ -152,7 +161,7 @@ namespace HapticSystem
         /// Stop a clip instance
         /// </summary>
         /// <param name="clipInstance">Clip instance to stop</param>
-        public static void StopClipInstance(HapticClipInstance clipInstance)
+        public static void StopClipInstance(HapticClipInstance clipInstance, bool forceUpdate = false)
         {
             if (clipInstance == null)
                 return;
@@ -168,6 +177,8 @@ namespace HapticSystem
             }
 
             RecomputeSpeeds();
+            if (forceUpdate)
+                ForceUpdateMotorsSpeedsForAllTargets();
         }
 
         /// <summary>
@@ -182,6 +193,11 @@ namespace HapticSystem
         #endregion
 
         #region INTERNALS
+        /// <summary>
+        /// Recompute speeds for a target gamepad
+        /// And ask to update motors speeds
+        /// </summary>
+        /// <param name="targetGamepad">Target gamepad (-1 for all gamepads)</param>
         internal static void RecomputeSpeeds(int targetGamepad = -1)
         {
             if (targetGamepad == -1)
@@ -221,21 +237,29 @@ namespace HapticSystem
             }
         }
 
+        /// <summary>
+        /// Ask to update motors speeds for a target gamepad
+        /// </summary>
+        /// <param name="targetGamepad">Target gamepad</param>
         internal static void AskUpdateMotorsSpeeds(int targetGamepad)
         {
             if (!askedTargetsUpdateMotors.Contains(targetGamepad))
                 askedTargetsUpdateMotors.Add(targetGamepad);
         }
 
+        /// <summary>
+        /// Coroutine that update motors speeds for all asked targets
+        /// </summary>
         internal static IEnumerator UpdateMotorsSpeedsCoroutine()
         {
-            List<int> targetsToUpdate = null;
+            List<int> targetsToUpdate = new List<int>();
             while (true)
             {
-                targetsToUpdate = new List<int>(askedTargetsUpdateMotors);
+                targetsToUpdate.Clear();
+                targetsToUpdate.AddRange(askedTargetsUpdateMotors);
                 foreach (int targetGamepad in targetsToUpdate)
                 {
-                    UpdateMotorsSpeedsForTarget(targetGamepad);
+                    UpdateAndSetMotorsSpeedsForTarget(targetGamepad);
                     yield return null;
                 }
                 askedTargetsUpdateMotors.Clear();
@@ -243,7 +267,20 @@ namespace HapticSystem
             }
         }
 
-        internal static void UpdateMotorsSpeedsForTarget(int targetGamepad)
+        /// <summary>
+        /// Force update motors speeds for all targets (for editor it is slow)
+        /// </summary>
+        internal static void ForceUpdateMotorsSpeedsForAllTargets()
+        {
+            for (int i = 0; i < Gamepad.all.Count; i++)
+                UpdateAndSetMotorsSpeedsForTarget(i);
+        }
+
+        /// <summary>
+        /// Update and set motors speeds for a target gamepad
+        /// </summary>
+        /// <param name="targetGamepad">Target gamepad</param>
+        internal static void UpdateAndSetMotorsSpeedsForTarget(int targetGamepad)
         {
             float lowFrequency = 0;
             float highFrequency = 0;
@@ -263,8 +300,8 @@ namespace HapticSystem
                 if (lastPlayed.LowFrequency == lowFrequency && lastPlayed.HighFrequency == highFrequency)
                     return;
             }
-            Debug.LogFormat("UpdateMotorsSpeedsForTarget {0} {1} {2}", targetGamepad, lowFrequency, highFrequency);
-            Gamepad.all[targetGamepad].SetMotorSpeeds(lowFrequency, highFrequency);
+
+            SetMotorSpeedForTarget(targetGamepad, lowFrequency, highFrequency);
 
             if (!lastPlayedSpeeds.ContainsKey(targetGamepad))
                 lastPlayedSpeeds.Add(targetGamepad, new MotorsSpeed(lowFrequency, highFrequency));
@@ -272,10 +309,32 @@ namespace HapticSystem
                 lastPlayedSpeeds[targetGamepad] = new MotorsSpeed(lowFrequency, highFrequency);
         }
 
+        /// <summary>
+        /// Set motors speeds for a target gamepad
+        /// </summary>
+        /// <param name="targetGamepad">Target gamepad</param>
+        /// <param name="lowFrequency">Low frequency</param>
+        /// <param name="highFrequency">High frequency</param>
+        internal static void SetMotorSpeedForTarget(int targetGamepad, float lowFrequency, float highFrequency)
+        {
+            if (targetGamepad < 0 || targetGamepad >= Gamepad.all.Count)
+            {
+                Debug.LogErrorFormat("{0} gamepad index is invalid.", targetGamepad);
+                return;
+            }
+
+            Gamepad.all[targetGamepad].SetMotorSpeeds(lowFrequency, highFrequency);
+        }
+
 
         #endregion
 
         #region PRIVATES
+        /// <summary>
+        /// Add a clip to the playing clips list
+        /// </summary>
+        /// <param name="targetGamepadIndex">Target gamepad index</param>
+        /// <param name="clipPlayer">Clip player</param>
         private static void AddPlayingClip(int targetGamepadIndex, HapticClipInstance clipPlayer)
         {
             if (playingClips.TryGetValue(targetGamepadIndex, out List<HapticClipInstance> targetPlayingClips))
@@ -290,6 +349,11 @@ namespace HapticSystem
             RecomputeSpeeds();
         }
 
+        /// <summary>
+        /// Remove a clip from the playing clips list
+        /// </summary>
+        /// <param name="targetGamepadIndex">Target gamepad index</param>
+        /// <param name="clipPlayer">Clip player</param>
         private static void RemovePlayingClip(int targetGamepadIndex, HapticClipInstance clipPlayer)
         {
             if (playingClips.TryGetValue(targetGamepadIndex, out List<HapticClipInstance> targetPlayingClips))
@@ -319,7 +383,6 @@ namespace HapticSystem
 
         internal static Coroutine StartCoroutine(IEnumerator routine)
         {
-            Debug.Log("StartCoroutine " + routine.ToString());
             return CoroutinePlayer.StartCoroutine(routine);
         }
 
