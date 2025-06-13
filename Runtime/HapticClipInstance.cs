@@ -93,7 +93,7 @@ namespace HapticSystem
             HapticManager.StopClipInstance(this, forceUpdate);
         }
 
-        internal void Stop()
+        internal void Dispose()
         {
             isPlaying = false;
 
