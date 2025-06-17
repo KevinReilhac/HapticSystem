@@ -11,7 +11,8 @@ namespace HapticSystem
     /// </summary>
     public static class HapticManager
     {
-        private const float UPDATE_MOTORS_SPEEDS_INTERVAL = 0.01f;
+        public static float UpdateMotorSpeedInterval = 0.1f;
+
         internal static Dictionary<int, MotorsSpeed> currentSpeeds = new Dictionary<int, MotorsSpeed>();
         internal static Dictionary<int, MotorsSpeed> lastPlayedSpeeds = new Dictionary<int, MotorsSpeed>();
         internal static Dictionary<int, List<HapticClipInstance>> playingClips = new Dictionary<int, List<HapticClipInstance>>();
@@ -263,7 +264,7 @@ namespace HapticSystem
                     yield return null;
                 }
                 askedTargetsUpdateMotors.Clear();
-                yield return new WaitForSeconds(UPDATE_MOTORS_SPEEDS_INTERVAL);
+                yield return new WaitForSeconds(UpdateMotorSpeedInterval);
             }
         }
 
