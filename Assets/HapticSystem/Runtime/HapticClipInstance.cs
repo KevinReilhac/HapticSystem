@@ -90,7 +90,7 @@ namespace HapticSystem
             } while(clip.Loop);
 
 
-            HapticManager.StopClipInstance(this, forceUpdate);
+            HapticManager.StopClipInstance(this, true);
         }
 
         internal void Dispose()
