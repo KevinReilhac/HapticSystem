@@ -14,7 +14,6 @@ namespace HapticSystem
         public static float UpdateMotorSpeedInterval = 0.1f;
 
         internal static Dictionary<int, MotorsSpeed> currentSpeeds = new Dictionary<int, MotorsSpeed>();
-        internal static Dictionary<int, MotorsSpeed> lastPlayedSpeeds = new Dictionary<int, MotorsSpeed>();
         internal static Dictionary<int, List<HapticClipInstance>> playingClips = new Dictionary<int, List<HapticClipInstance>>();
 
         private static float _strenghtMultiplier = 1f;
@@ -296,18 +295,8 @@ namespace HapticSystem
                 Debug.LogErrorFormat("{0} gamepad index is invalid.", targetGamepad);
                 return;
             }
-            if (lastPlayedSpeeds.TryGetValue(targetGamepad, out MotorsSpeed lastPlayed))
-            {
-                if (lastPlayed.LowFrequency == lowFrequency && lastPlayed.HighFrequency == highFrequency)
-                    return;
-            }
 
             SetMotorSpeedForTarget(targetGamepad, lowFrequency, highFrequency);
-
-            if (!lastPlayedSpeeds.ContainsKey(targetGamepad))
-                lastPlayedSpeeds.Add(targetGamepad, new MotorsSpeed(lowFrequency, highFrequency));
-            else
-                lastPlayedSpeeds[targetGamepad] = new MotorsSpeed(lowFrequency, highFrequency);
         }
 
         /// <summary>
