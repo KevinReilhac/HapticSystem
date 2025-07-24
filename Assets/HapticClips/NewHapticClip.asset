@@ -14,13 +14,63 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   strenght:
     random: 1
-    minValue: 0.2
-    maxValue: 0.33
-    value: 0.24077204
-  lowFrequencyMultiplier: 0.719
+    minValue: 1
+    maxValue: 1
+    value: 1
+  lowFrequencyMultiplier: 1
   highFrequencyMultiplier: 1
-  useProgressionCurve: 1
-  progressionCurve:
+  useGlobalProgressionCurve: 1
+  globalProgressionCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0
+      outWeight: 0
+    - serializedVersion: 3
+      time: 1
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0
+      outWeight: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  useLowProgressionCurve: 0
+  lowProgressionCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0
+      outWeight: 0
+    - serializedVersion: 3
+      time: 1
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0
+      outWeight: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  useHighProgressionCurve: 0
+  highProgressionCurve:
     serializedVersion: 2
     m_Curve:
     - serializedVersion: 3
@@ -45,4 +95,4 @@ MonoBehaviour:
     m_PostInfinity: 2
     m_RotationOrder: 4
   loop: 0
-  duration: 0.3
+  duration: 1

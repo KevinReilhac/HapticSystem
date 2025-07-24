@@ -17,7 +17,6 @@ namespace HapticSystem
         internal static Dictionary<int, List<HapticClipInstance>> playingClips = new Dictionary<int, List<HapticClipInstance>>();
 
         private static float _strenghtMultiplier = 1f;
-        private static List<int> askedTargetsUpdateMotors = new List<int>();
 
         #region PUBLICS
         /// <summary>
@@ -227,24 +226,12 @@ namespace HapticSystem
                 {
                     currentMotorSpeed.LowFrequency = newLowFrequency;
                     currentMotorSpeed.HighFrequency = newHighFrequency;
-                    AskUpdateMotorsSpeeds(targetGamepad);
                 }
             }
             else
             {
                 currentSpeeds.Add(targetGamepad, new MotorsSpeed(newLowFrequency, newHighFrequency));
-                AskUpdateMotorsSpeeds(targetGamepad);
             }
-        }
-
-        /// <summary>
-        /// Ask to update motors speeds for a target gamepad
-        /// </summary>
-        /// <param name="targetGamepad">Target gamepad</param>
-        internal static void AskUpdateMotorsSpeeds(int targetGamepad)
-        {
-            if (!askedTargetsUpdateMotors.Contains(targetGamepad))
-                askedTargetsUpdateMotors.Add(targetGamepad);
         }
 
         /// <summary>
@@ -252,17 +239,13 @@ namespace HapticSystem
         /// </summary>
         internal static IEnumerator UpdateMotorsSpeedsCoroutine()
         {
-            List<int> targetsToUpdate = new List<int>();
             while (true)
             {
-                targetsToUpdate.Clear();
-                targetsToUpdate.AddRange(askedTargetsUpdateMotors);
-                foreach (int targetGamepad in targetsToUpdate)
+                for (int i = 0; i < Gamepad.all.Count; i++)
                 {
-                    UpdateAndSetMotorsSpeedsForTarget(targetGamepad);
+                    UpdateAndSetMotorsSpeedsForTarget(i);
                     yield return null;
                 }
-                askedTargetsUpdateMotors.Clear();
                 yield return new WaitForSeconds(UpdateMotorSpeedInterval);
             }
         }
